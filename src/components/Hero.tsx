@@ -30,7 +30,7 @@ const Hero = () => {
             <Button className="bg-gold hover:bg-gold/80 text-dark font-semibold px-6 sm:px-8 py-3 rounded-md transition-all duration-300 text-base sm:text-lg w-full sm:w-auto">
               Join Our Elite Network
             </Button>
-            <Button size="sm" className="bg-gold hover:bg-gold/80 text-dark font-semibold rounded-md transition-all duration-300 w-full sm:w-auto">
+            <Button variant="outline" size="sm" className="border-gold text-gold hover:bg-gold hover:text-dark font-semibold rounded-md transition-all duration-300 w-full sm:w-auto">
               Learn More
             </Button>
           </div>
