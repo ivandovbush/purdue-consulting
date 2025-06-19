@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { LinkedIn } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
 
 const Team = () => {
   const teamMembers = [
@@ -99,7 +98,7 @@ const Team = () => {
                   href={member.linkedin}
                   className="inline-flex items-center space-x-2 text-gold hover:text-gold/80 transition-colors duration-300"
                 >
-                  <LinkedIn className="w-4 h-4" />
+                  <Linkedin className="w-4 h-4" />
                   <span className="text-sm font-inter">Connect</span>
                 </a>
               </div>
