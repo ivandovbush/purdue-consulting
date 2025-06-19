@@ -27,10 +27,10 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button className="bg-gold hover:bg-gold/80 text-dark font-semibold px-8 py-3 rounded-md transition-all duration-300 text-lg">
+            <Button className="bg-gold hover:bg-gold/80 text-dark font-semibold px-6 sm:px-8 py-3 rounded-md transition-all duration-300 text-base sm:text-lg w-full sm:w-auto">
               Join Our Elite Network
             </Button>
-            <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-3 rounded-md transition-all duration-300 text-lg">
+            <Button className="bg-gold hover:bg-gold/80 text-dark font-semibold px-6 sm:px-8 py-3 rounded-md transition-all duration-300 text-base sm:text-lg w-full sm:w-auto">
               Learn More
             </Button>
           </div>

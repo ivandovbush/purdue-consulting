@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Linkedin } from 'lucide-react';
 
@@ -9,7 +10,8 @@ const Team = () => {
       major: "Industrial Engineering",
       year: "Senior",
       bio: "Former McKinsey intern with expertise in operations strategy and digital transformation.",
-      linkedin: "#"
+      linkedin: "#",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       name: "Marcus Rodriguez",
@@ -17,7 +19,8 @@ const Team = () => {
       major: "Computer Science",
       year: "Junior", 
       bio: "Technology consulting specialist with experience at Deloitte and passion for fintech innovation.",
-      linkedin: "#"
+      linkedin: "#",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       name: "Emily Watson",
@@ -25,7 +28,8 @@ const Team = () => {
       major: "Management",
       year: "Senior",
       bio: "Supply chain optimization expert with summer experience at Bain & Company.",
-      linkedin: "#"
+      linkedin: "#",
+      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       name: "David Park",
@@ -33,7 +37,8 @@ const Team = () => {
       major: "Data Science",
       year: "Junior",
       bio: "Analytics-driven consultant specializing in market research and business intelligence.",
-      linkedin: "#"
+      linkedin: "#",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       name: "Amanda Foster",
@@ -41,7 +46,8 @@ const Team = () => {
       major: "Economics",
       year: "Senior",
       bio: "Corporate strategy consultant with extensive network in Fortune 500 companies.",
-      linkedin: "#"
+      linkedin: "#",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
       name: "James Liu",
@@ -49,7 +55,8 @@ const Team = () => {
       major: "Finance",
       year: "Junior",
       bio: "Investment banking and consulting dual expertise with focus on financial strategy.",
-      linkedin: "#"
+      linkedin: "#",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     }
   ];
 
@@ -73,8 +80,13 @@ const Team = () => {
               key={index}
               className="group relative bg-dark/80 backdrop-blur-sm border border-gray-800 rounded-lg overflow-hidden hover:border-gold/50 transition-all duration-300"
             >
-              {/* Profile Image Placeholder */}
-              <div className="w-full h-64 bg-gradient-to-br from-gray-800 to-gray-700 relative overflow-hidden">
+              {/* Profile Image */}
+              <div className="w-full h-64 relative overflow-hidden">
+                <img 
+                  src={member.image} 
+                  alt={member.name}
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4">
                   <h3 className="font-space-grotesk font-semibold text-lg text-white">

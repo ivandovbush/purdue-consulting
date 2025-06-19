@@ -3,14 +3,38 @@ import React from 'react';
 
 const Partners = () => {
   const partners = [
-    "McKinsey & Company",
-    "Boston Consulting Group", 
-    "Bain & Company",
-    "Deloitte Consulting",
-    "PwC Strategy&",
-    "Accenture Strategy",
-    "Oliver Wyman",
-    "EY-Parthenon"
+    {
+      name: "McKinsey & Company",
+      logo: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+    },
+    {
+      name: "Boston Consulting Group",
+      logo: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+    },
+    {
+      name: "Bain & Company",
+      logo: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+    },
+    {
+      name: "Deloitte Consulting",
+      logo: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+    },
+    {
+      name: "PwC Strategy&",
+      logo: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+    },
+    {
+      name: "Accenture Strategy",
+      logo: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+    },
+    {
+      name: "Oliver Wyman",
+      logo: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+    },
+    {
+      name: "EY-Parthenon",
+      logo: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+    }
   ];
 
   return (
@@ -35,11 +59,15 @@ const Partners = () => {
               className="group bg-dark/80 backdrop-blur-sm border border-gray-800 rounded-lg p-6 hover:border-gold/50 transition-all duration-300 hover:transform hover:scale-105"
             >
               <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-gold/20 to-gold/5 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-gold/30 transition-all duration-300">
-                  <div className="w-8 h-8 bg-gold/40 rounded-md"></div>
+                <div className="w-16 h-16 bg-white/5 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-gold/30 transition-all duration-300 overflow-hidden">
+                  <img 
+                    src={partner.logo} 
+                    alt={partner.name}
+                    className="w-12 h-12 object-cover rounded grayscale group-hover:grayscale-0 transition-all duration-300"
+                  />
                 </div>
                 <h3 className="font-inter font-medium text-white text-sm group-hover:text-gold transition-colors duration-300">
-                  {partner}
+                  {partner.name}
                 </h3>
               </div>
             </div>
