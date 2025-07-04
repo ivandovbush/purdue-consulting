@@ -4,6 +4,13 @@ import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
 
 const Hero = () => {
+  const scrollToApplication = () => {
+    const applicationSection = document.getElementById('application');
+    if (applicationSection) {
+      applicationSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Geometric Background */}
@@ -27,7 +34,10 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button className="bg-gold hover:bg-gold/80 text-dark font-semibold px-6 sm:px-8 py-3 rounded-md transition-all duration-300 text-base sm:text-lg w-full sm:w-auto">
+            <Button 
+              onClick={scrollToApplication}
+              className="bg-gold hover:bg-gold/80 text-dark font-semibold px-6 sm:px-8 py-3 rounded-md transition-all duration-300 text-base sm:text-lg w-full sm:w-auto"
+            >
               Join Our Elite Network
             </Button>
             <Button variant="outline" size="sm" className="border-gold text-gold hover:bg-gold hover:text-dark font-semibold rounded-md transition-all duration-300 w-full sm:w-auto">

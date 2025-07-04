@@ -13,6 +13,13 @@ const Header = () => {
     { name: 'Partners', href: '#partners' },
   ];
 
+  const scrollToApplication = () => {
+    const applicationSection = document.getElementById('application');
+    if (applicationSection) {
+      applicationSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-dark/90 backdrop-blur-md border-b border-gray-800">
       <div className="container mx-auto px-6 py-4">
@@ -37,7 +44,10 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-gold hover:bg-gold/80 text-dark font-semibold px-6 py-2 rounded-md transition-all duration-300">
+            <Button 
+              onClick={scrollToApplication}
+              className="bg-gold hover:bg-gold/80 text-dark font-semibold px-6 py-2 rounded-md transition-all duration-300"
+            >
               Apply Now
             </Button>
           </div>
@@ -67,7 +77,13 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <Button className="bg-gold hover:bg-gold/80 text-dark font-semibold px-6 py-2 rounded-md transition-all duration-300 w-fit">
+              <Button 
+                onClick={() => {
+                  scrollToApplication();
+                  setIsMenuOpen(false);
+                }}
+                className="bg-gold hover:bg-gold/80 text-dark font-semibold px-6 py-2 rounded-md transition-all duration-300 w-fit"
+              >
                 Apply Now
               </Button>
             </div>
