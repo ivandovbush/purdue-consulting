@@ -26,7 +26,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="font-space-grotesk font-bold text-xl text-white">
-            PECC
+            The Purdue Consulting Club
           </div>
 
           {/* Desktop Navigation */}

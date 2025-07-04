@@ -10,7 +10,7 @@ const About = () => {
           <div className="space-y-6">
             <div>
               <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4">
-                About <span className="text-gold">PECC</span>
+                About <span className="text-gold">The Purdue Consulting Club</span>
               </h2>
               <div className="w-20 h-1 bg-gold mb-6"></div>
             </div>

@@ -9,17 +9,17 @@ const Admissions = () => {
       description: "Submit your application including academic transcripts, resume, and personal statement demonstrating your passion for consulting.",
       timeline: "Rolling Admissions"
     },
+    // {
+    //   step: "02", 
+    //   title: "Case Interview",
+    //   description: "Complete a rigorous case interview with our executive board to assess your analytical thinking and problem-solving abilities.",
+    //   timeline: "2-3 Weeks After Application"
+    // },
     {
-      step: "02", 
-      title: "Case Interview",
-      description: "Complete a rigorous case interview with our executive board to assess your analytical thinking and problem-solving abilities.",
-      timeline: "2-3 Weeks After Application"
-    },
-    {
-      step: "03",
+      step: "02",
       title: "Final Selection",
       description: "Join our elite cohort after a final evaluation of your potential for leadership and commitment to excellence.",
-      timeline: "1 Week After Interview"
+      timeline: "1 Week After Application Submission"
     }
   ];
 
@@ -86,7 +86,7 @@ const Admissions = () => {
                   <div className="text-mid-gray text-sm font-inter">Average GPA</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-space-grotesk font-bold text-gold mb-2">48hrs</div>
+                  <div className="text-3xl font-space-grotesk font-bold text-gold mb-2">1 week</div>
                   <div className="text-mid-gray text-sm font-inter">Application Review Time</div>
                 </div>
               </div>
