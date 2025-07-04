@@ -1,8 +1,11 @@
+
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
+import { supabase } from '@/integrations/supabase/client';
+import { useToast } from '@/hooks/use-toast';
 
 const Application = () => {
   const [formData, setFormData] = useState({
@@ -17,6 +20,8 @@ const Application = () => {
     essay: '',
     motivation: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -26,10 +31,71 @@ const Application = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Application submitted:', formData);
-    // Handle form submission here
+    
+    // Basic validation
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.major || !formData.year || !formData.motivation) {
+      toast({
+        title: "Missing Information",
+        description: "Please fill in all required fields.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      console.log('Submitting application:', formData);
+      
+      const { data, error } = await supabase.functions.invoke('send-application', {
+        body: {
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          major: formData.major,
+          year: formData.year,
+          motivation: formData.motivation
+        }
+      });
+
+      if (error) {
+        console.error('Supabase function error:', error);
+        throw new Error(error.message || 'Failed to submit application');
+      }
+
+      console.log('Application submitted successfully:', data);
+
+      toast({
+        title: "Application Submitted!",
+        description: "Thank you for your application. We'll be in touch soon!",
+      });
+
+      // Reset form
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        major: '',
+        year: '',
+        gpa: '',
+        resume: null,
+        essay: '',
+        motivation: ''
+      });
+
+    } catch (error: any) {
+      console.error('Error submitting application:', error);
+      toast({
+        title: "Submission Failed",
+        description: error.message || "There was an error submitting your application. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -105,7 +171,7 @@ const Application = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <Label htmlFor="firstName" className="text-white font-inter">First Name</Label>
+                    <Label htmlFor="firstName" className="text-white font-inter">First Name *</Label>
                     <Input
                       id="firstName"
                       name="firstName"
@@ -116,7 +182,7 @@ const Application = () => {
                     />
                   </div>
                   <div>
-                    <Label htmlFor="lastName" className="text-white font-inter">Last Name</Label>
+                    <Label htmlFor="lastName" className="text-white font-inter">Last Name *</Label>
                     <Input
                       id="lastName"
                       name="lastName"
@@ -129,7 +195,7 @@ const Application = () => {
                 </div>
 
                 <div>
-                  <Label htmlFor="email" className="text-white font-inter">Purdue Email</Label>
+                  <Label htmlFor="email" className="text-white font-inter">Purdue Email *</Label>
                   <Input
                     id="email"
                     name="email"
@@ -143,7 +209,7 @@ const Application = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <Label htmlFor="major" className="text-white font-inter">Major</Label>
+                    <Label htmlFor="major" className="text-white font-inter">Major *</Label>
                     <Input
                       id="major"
                       name="major"
@@ -154,7 +220,7 @@ const Application = () => {
                     />
                   </div>
                   <div>
-                    <Label htmlFor="year" className="text-white font-inter">Year</Label>
+                    <Label htmlFor="year" className="text-white font-inter">Year *</Label>
                     <Input
                       id="year"
                       name="year"
@@ -169,7 +235,7 @@ const Application = () => {
 
                 <div>
                   <Label htmlFor="motivation" className="text-white font-inter">
-                    Why do you want to join PECC? (500 words max)
+                    Why do you want to join PECC? (500 words max) *
                   </Label>
                   <Textarea
                     id="motivation"
@@ -184,9 +250,10 @@ const Application = () => {
 
                 <Button 
                   type="submit"
-                  className="w-full bg-gold hover:bg-gold/80 text-dark font-semibold py-3 transition-all duration-300"
+                  disabled={isSubmitting}
+                  className="w-full bg-gold hover:bg-gold/80 text-dark font-semibold py-3 transition-all duration-300 disabled:opacity-50"
                 >
-                  Submit Application
+                  {isSubmitting ? 'Submitting...' : 'Submit Application'}
                 </Button>
               </form>
             </div>
