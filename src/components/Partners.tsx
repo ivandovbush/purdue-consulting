@@ -38,10 +38,10 @@ const Partners = () => {
   ];
 
   return (
-    <section id="partners" className="py-20 bg-light-cream">
+    <section id="partners" className="py-20 bg-warm-dark">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-warm-dark">
+          <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-light-cream">
             Our <span className="text-warm-brown">Partners</span>
           </h2>
           <div className="w-20 h-1 bg-warm-brown mx-auto mb-6"></div>

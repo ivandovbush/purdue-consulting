@@ -6,10 +6,10 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 const FacultyAdvisor = () => {
   return (
-    <section id="faculty-advisor" className="py-16 bg-cream">
+    <section id="faculty-advisor" className="py-16 bg-warm-dark">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-warm-dark">
+          <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-light-cream">
             Faculty Advisor
           </h2>
           <p className="text-mid-brown text-lg max-w-2xl mx-auto">

@@ -12,7 +12,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#FEF7E5]">
       {/* Geometric Background */}
       <div className="geometric-bg">
         <div className="geometric-shape w-32 h-32 border-2 border-warm-brown/20 rotate-45"></div>
@@ -25,10 +25,10 @@ const Hero = () => {
         <div className="animate-fade-in">
           <h1 className="font-space-grotesk font-bold text-5xl md:text-7xl mb-6 leading-tight">
             Where Strategy
-            <span className="block text-warm-brown">Meets Opportunity</span>
+            <span className="block text-yellow-500">Meets Opportunity</span>
           </h1>
           
-          <p className="text-mid-brown text-lg md:text-xl mb-8 max-w-2xl mx-auto font-inter">
+          <p className="text-warm-dark text-lg md:text-xl mb-8 max-w-2xl mx-auto font-inter">
             Purdue University's premier consulting club connecting elite students with 
             startups, consulting firms, and business leaders across the nation.
           </p>

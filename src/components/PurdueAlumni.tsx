@@ -45,7 +45,7 @@ const PurdueAlumni = () => {
   ];
 
   return (
-    <section id="alumni" className="py-16 bg-light-cream">
+    <section id="alumni" className="py-16 bg-[#FAF3DD]">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-warm-dark">
