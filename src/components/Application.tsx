@@ -104,8 +104,8 @@ const Application = () => {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-warm-brown">
-              Ready to <span className="text-gold-hint">Apply?</span>
+            <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-warm-dark">
+              Ready to <span className="text-warm-brown">Apply?</span>
             </h2>
             <div className="w-20 h-1 bg-gold-hint mx-auto mb-6"></div>
             <p className="text-mid-brown text-lg max-w-2xl mx-auto font-inter">
@@ -118,36 +118,36 @@ const Application = () => {
             {/* Application Info */}
             <div className="space-y-8">
               <div>
-                <h3 className="font-space-grotesk font-semibold text-2xl text-gold-hint mb-4">Application Requirements</h3>
+                <h3 className="font-space-grotesk font-semibold text-2xl text-warm-brown mb-4">Application Requirements</h3>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gold-hint rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-warm-brown rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-inter font-semibold text-gold-hint">Academic Excellence</h4>
+                      <h4 className="font-inter font-semibold text-warm-brown">Academic Excellence</h4>
                       <p className="text-mid-brown text-sm">Minimum 3.7 GPA required</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gold-hint rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-warm-brown rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-inter font-semibold text-gold-hint">Leadership Experience</h4>
+                      <h4 className="font-inter font-semibold text-warm-brown">Leadership Experience</h4>
                       <p className="text-mid-brown text-sm">Demonstrated leadership in academics, work, or extracurriculars</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gold-hint rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-warm-brown rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-inter font-semibold text-gold-hint">Professional Interest</h4>
+                      <h4 className="font-inter font-semibold text-warm-brown">Professional Interest</h4>
                       <p className="text-mid-brown text-sm">Genuine passion for consulting and business strategy</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gold-hint rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-warm-brown rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-inter font-semibold text-gold-hint">Commitment</h4>
+                      <h4 className="font-inter font-semibold text-warm-brown">Commitment</h4>
                       <p className="text-mid-brown text-sm">Ability to dedicate 8-10 hours per week to club activities</p>
                     </div>
                   </div>
@@ -155,12 +155,12 @@ const Application = () => {
               </div>
 
               <div className="bg-gradient-to-br from-gold-hint/10 to-transparent p-6 rounded-lg border border-gold-hint/20">
-                <h4 className="font-space-grotesk font-semibold text-gold-hint mb-3">Next Steps</h4>
+                <h4 className="font-space-grotesk font-semibold text-warm-brown mb-3">Next Steps</h4>
                 <p className="text-mid-brown text-sm font-inter mb-4">
                   After submitting your application, you'll receive an email within 1 week 
                   confirming the next steps in joining the team.
                 </p>
-                <p className="text-gold-hint text-sm font-inter font-medium">
+                <p className="text-warm-brown text-sm font-inter font-medium">
                   Application Deadline: Rolling Admissions
                 </p>
               </div>
@@ -171,7 +171,7 @@ const Application = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <Label htmlFor="firstName" className="text-gold-hint font-inter">
+                    <Label htmlFor="firstName" className="text-yellow-700 font-inter">
                       First Name <span className="text-red-500">*</span>
                     </Label>
                     <Input
@@ -184,7 +184,7 @@ const Application = () => {
                     />
                   </div>
                   <div>
-                    <Label htmlFor="lastName" className="text-gold-hint font-inter">
+                    <Label htmlFor="lastName" className="text-yellow-700 font-inter">
                       Last Name <span className="text-red-500">*</span>
                     </Label>
                     <Input
@@ -199,7 +199,7 @@ const Application = () => {
                 </div>
 
                 <div>
-                  <Label htmlFor="email" className="text-gold-hint font-inter">
+                  <Label htmlFor="email" className="text-yellow-700 font-inter">
                     Purdue Email <span className="text-red-500">*</span>
                   </Label>
                   <Input
@@ -215,7 +215,7 @@ const Application = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <Label htmlFor="major" className="text-gold-hint font-inter">
+                    <Label htmlFor="major" className="text-yellow-700 font-inter">
                       Major <span className="text-red-500">*</span>
                     </Label>
                     <Input
@@ -223,12 +223,13 @@ const Application = () => {
                       name="major"
                       value={formData.major}
                       onChange={handleInputChange}
+                      placeholder="e.g., Finance"
                       className="bg-light-cream border-warm-tan text-warm-brown focus:border-gold-hint"
                       required
                     />
                   </div>
                   <div>
-                    <Label htmlFor="year" className="text-gold-hint font-inter">
+                    <Label htmlFor="year" className="text-yellow-700 font-inter">
                       Year <span className="text-red-500">*</span>
                     </Label>
                     <Input
@@ -244,7 +245,7 @@ const Application = () => {
                 </div>
 
                 <div>
-                  <Label htmlFor="motivation" className="text-gold-hint font-inter">
+                  <Label htmlFor="motivation" className="text-yellow-700 font-inter">
                     Why do you want to join PECC? (500 words max) <span className="text-red-500">*</span>
                   </Label>
                   <Textarea
