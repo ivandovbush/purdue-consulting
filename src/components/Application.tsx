@@ -99,17 +99,17 @@ const Application = () => {
   };
 
   return (
-    <section id="application" className="py-20 bg-dark/50">
+    <section id="application" className="py-20 bg-light-cream">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4">
-              Ready to <span className="text-gold">Apply?</span>
+            <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-warm-brown">
+              Ready to <span className="text-gold-hint">Apply?</span>
             </h2>
-            <div className="w-20 h-1 bg-gold mx-auto mb-6"></div>
-            <p className="text-mid-gray text-lg max-w-2xl mx-auto font-inter">
-              Take the first step toward joining Purdue’s most welcoming consulting community. Our 
+            <div className="w-20 h-1 bg-gold-hint mx-auto mb-6"></div>
+            <p className="text-mid-brown text-lg max-w-2xl mx-auto font-inter">
+              Take the first step toward joining Purdue's most welcoming consulting community. Our 
               application process encourages all motivated students to grow and contribute.
             </p>
           </div>
@@ -118,124 +118,134 @@ const Application = () => {
             {/* Application Info */}
             <div className="space-y-8">
               <div>
-                <h3 className="font-space-grotesk font-semibold text-2xl text-white mb-4">Application Requirements</h3>
+                <h3 className="font-space-grotesk font-semibold text-2xl text-gold-hint mb-4">Application Requirements</h3>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gold rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-gold-hint rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-inter font-semibold text-white">Academic Excellence</h4>
-                      <p className="text-mid-gray text-sm">Minimum 3.7 GPA required</p>
+                      <h4 className="font-inter font-semibold text-gold-hint">Academic Excellence</h4>
+                      <p className="text-mid-brown text-sm">Minimum 3.7 GPA required</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gold rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-gold-hint rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-inter font-semibold text-white">Leadership Experience</h4>
-                      <p className="text-mid-gray text-sm">Demonstrated leadership in academics, work, or extracurriculars</p>
+                      <h4 className="font-inter font-semibold text-gold-hint">Leadership Experience</h4>
+                      <p className="text-mid-brown text-sm">Demonstrated leadership in academics, work, or extracurriculars</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gold rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-gold-hint rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-inter font-semibold text-white">Professional Interest</h4>
-                      <p className="text-mid-gray text-sm">Genuine passion for consulting and business strategy</p>
+                      <h4 className="font-inter font-semibold text-gold-hint">Professional Interest</h4>
+                      <p className="text-mid-brown text-sm">Genuine passion for consulting and business strategy</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-gold rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-gold-hint rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-inter font-semibold text-white">Commitment</h4>
-                      <p className="text-mid-gray text-sm">Ability to dedicate 8-10 hours per week to club activities</p>
+                      <h4 className="font-inter font-semibold text-gold-hint">Commitment</h4>
+                      <p className="text-mid-brown text-sm">Ability to dedicate 8-10 hours per week to club activities</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-gold/10 to-transparent p-6 rounded-lg border border-gold/20">
-                <h4 className="font-space-grotesk font-semibold text-white mb-3">Next Steps</h4>
-                <p className="text-mid-gray text-sm font-inter mb-4">
+              <div className="bg-gradient-to-br from-gold-hint/10 to-transparent p-6 rounded-lg border border-gold-hint/20">
+                <h4 className="font-space-grotesk font-semibold text-gold-hint mb-3">Next Steps</h4>
+                <p className="text-mid-brown text-sm font-inter mb-4">
                   After submitting your application, you'll receive an email within 1 week 
                   confirming the next steps in joining the team.
                 </p>
-                <p className="text-gold text-sm font-inter font-medium">
+                <p className="text-gold-hint text-sm font-inter font-medium">
                   Application Deadline: Rolling Admissions
                 </p>
               </div>
             </div>
 
             {/* Application Form */}
-            <div className="bg-dark/80 backdrop-blur-sm border border-gray-800 rounded-lg p-8">
+            <div className="bg-cream/80 backdrop-blur-sm border border-warm-tan/30 rounded-lg p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <Label htmlFor="firstName" className="text-white font-inter">First Name *</Label>
+                    <Label htmlFor="firstName" className="text-gold-hint font-inter">
+                      First Name <span className="text-red-500">*</span>
+                    </Label>
                     <Input
                       id="firstName"
                       name="firstName"
                       value={formData.firstName}
                       onChange={handleInputChange}
-                      className="bg-dark/50 border-gray-700 text-white focus:border-gold"
+                      className="bg-light-cream border-warm-tan text-warm-brown focus:border-gold-hint"
                       required
                     />
                   </div>
                   <div>
-                    <Label htmlFor="lastName" className="text-white font-inter">Last Name *</Label>
+                    <Label htmlFor="lastName" className="text-gold-hint font-inter">
+                      Last Name <span className="text-red-500">*</span>
+                    </Label>
                     <Input
                       id="lastName"
                       name="lastName"
                       value={formData.lastName}
                       onChange={handleInputChange}
-                      className="bg-dark/50 border-gray-700 text-white focus:border-gold"
+                      className="bg-light-cream border-warm-tan text-warm-brown focus:border-gold-hint"
                       required
                     />
                   </div>
                 </div>
 
                 <div>
-                  <Label htmlFor="email" className="text-white font-inter">Purdue Email *</Label>
+                  <Label htmlFor="email" className="text-gold-hint font-inter">
+                    Purdue Email <span className="text-red-500">*</span>
+                  </Label>
                   <Input
                     id="email"
                     name="email"
                     type="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="bg-dark/50 border-gray-700 text-white focus:border-gold"
+                    className="bg-light-cream border-warm-tan text-warm-brown focus:border-gold-hint"
                     required
                   />
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <Label htmlFor="major" className="text-white font-inter">Major *</Label>
+                    <Label htmlFor="major" className="text-gold-hint font-inter">
+                      Major <span className="text-red-500">*</span>
+                    </Label>
                     <Input
                       id="major"
                       name="major"
                       value={formData.major}
                       onChange={handleInputChange}
-                      className="bg-dark/50 border-gray-700 text-white focus:border-gold"
+                      className="bg-light-cream border-warm-tan text-warm-brown focus:border-gold-hint"
                       required
                     />
                   </div>
                   <div>
-                    <Label htmlFor="year" className="text-white font-inter">Year *</Label>
+                    <Label htmlFor="year" className="text-gold-hint font-inter">
+                      Year <span className="text-red-500">*</span>
+                    </Label>
                     <Input
                       id="year"
                       name="year"
                       value={formData.year}
                       onChange={handleInputChange}
                       placeholder="e.g., Sophomore"
-                      className="bg-dark/50 border-gray-700 text-white focus:border-gold"
+                      className="bg-light-cream border-warm-tan text-warm-brown focus:border-gold-hint"
                       required
                     />
                   </div>
                 </div>
 
                 <div>
-                  <Label htmlFor="motivation" className="text-white font-inter">
-                    Why do you want to join PECC? (500 words max) *
+                  <Label htmlFor="motivation" className="text-gold-hint font-inter">
+                    Why do you want to join PECC? (500 words max) <span className="text-red-500">*</span>
                   </Label>
                   <Textarea
                     id="motivation"
@@ -243,7 +253,7 @@ const Application = () => {
                     value={formData.motivation}
                     onChange={handleInputChange}
                     rows={4}
-                    className="bg-dark/50 border-gray-700 text-white focus:border-gold resize-none"
+                    className="bg-light-cream border-warm-tan text-warm-brown focus:border-gold-hint resize-none"
                     required
                   />
                 </div>
@@ -251,7 +261,7 @@ const Application = () => {
                 <Button 
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gold hover:bg-gold/80 text-dark font-semibold py-3 transition-all duration-300 disabled:opacity-50"
+                  className="w-full bg-warm-brown hover:bg-warm-brown/80 text-light-cream font-semibold py-3 transition-all duration-300 disabled:opacity-50"
                 >
                   {isSubmitting ? 'Submitting...' : 'Submit Application'}
                 </Button>
