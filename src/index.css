@@ -92,7 +92,7 @@
   }
 
   body {
-    @apply bg-light-cream text-warm-dark font-inter;
+    @apply bg-cream text-warm-dark font-inter;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -106,7 +106,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(48 25% 97%);
+  background: hsl(48 30% 94%);
 }
 
 ::-webkit-scrollbar-thumb {

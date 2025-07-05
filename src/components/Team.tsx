@@ -61,14 +61,14 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="py-20 bg-dark/50">
+    <section id="team" className="py-20 bg-cream">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4">
-            Our <span className="text-gold">Team</span>
+          <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-warm-dark">
+            Our <span className="text-warm-brown">Team</span>
           </h2>
-          <div className="w-20 h-1 bg-gold mx-auto mb-6"></div>
-          <p className="text-mid-gray text-lg max-w-2xl mx-auto font-inter">
+          <div className="w-20 h-1 bg-warm-brown mx-auto mb-6"></div>
+          <p className="text-mid-brown text-lg max-w-2xl mx-auto font-inter">
             Meet the exceptional leaders driving innovation and excellence at PECC. 
             Our executive board brings diverse expertise and unwavering commitment to success.
           </p>
@@ -78,7 +78,7 @@ const Team = () => {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="group relative bg-dark/80 backdrop-blur-sm border border-gray-800 rounded-lg overflow-hidden hover:border-gold/50 transition-all duration-300"
+              className="group relative bg-light-cream backdrop-blur-sm border border-light-tan rounded-lg overflow-hidden hover:border-warm-brown/50 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               {/* Profile Image */}
               <div className="w-full h-64 relative overflow-hidden">
@@ -87,28 +87,28 @@ const Team = () => {
                   alt={member.name}
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-warm-dark/80 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4">
-                  <h3 className="font-space-grotesk font-semibold text-lg text-white">
+                  <h3 className="font-space-grotesk font-semibold text-lg text-cream">
                     {member.name}
                   </h3>
-                  <p className="text-gold text-sm font-inter">{member.position}</p>
+                  <p className="text-gold-hint text-sm font-inter">{member.position}</p>
                 </div>
               </div>
 
               {/* Hover Content */}
-              <div className="absolute inset-0 bg-dark/95 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-center">
-                <h3 className="font-space-grotesk font-semibold text-xl text-white mb-2">
+              <div className="absolute inset-0 bg-cream/95 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-center">
+                <h3 className="font-space-grotesk font-semibold text-xl text-warm-dark mb-2">
                   {member.name}
                 </h3>
-                <p className="text-gold text-sm font-inter mb-1">{member.position}</p>
-                <p className="text-mid-gray text-sm font-inter mb-3">{member.major} • {member.year}</p>
-                <p className="text-mid-gray text-sm font-inter leading-relaxed mb-4">
+                <p className="text-warm-brown text-sm font-inter mb-1">{member.position}</p>
+                <p className="text-mid-brown text-sm font-inter mb-3">{member.major} • {member.year}</p>
+                <p className="text-mid-brown text-sm font-inter leading-relaxed mb-4">
                   {member.bio}
                 </p>
                 <a
                   href={member.linkedin}
-                  className="inline-flex items-center space-x-2 text-gold hover:text-gold/80 transition-colors duration-300"
+                  className="inline-flex items-center space-x-2 text-warm-brown hover:text-warm-brown/80 transition-colors duration-300"
                 >
                   <Linkedin className="w-4 h-4" />
                   <span className="text-sm font-inter">Connect</span>
