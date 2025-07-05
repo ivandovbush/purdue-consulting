@@ -10,6 +10,8 @@ const Header = () => {
     { name: 'What We Do', href: '#services' },
     { name: 'Admissions', href: '#admissions' },
     { name: 'Team', href: '#team' },
+    { name: 'Faculty Advisor', href: '#faculty-advisor' },
+    { name: 'Alumni', href: '#alumni' },
     { name: 'Partners', href: '#partners' },
   ];
 
@@ -21,7 +23,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-warm-dark/90 backdrop-blur-md border-b border-warm-brown/30">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-light-cream/90 backdrop-blur-md border-b border-warm-brown/30">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo and Brand */}
@@ -33,7 +35,7 @@ const Header = () => {
               className="w-8 h-8 object-contain"
             />
             {/* Text - hidden on mobile, visible on desktop */}
-            <div className="hidden md:block font-space-grotesk font-bold text-xl text-cream">
+            <div className="hidden md:block font-space-grotesk font-bold text-xl text-warm-dark">
               The Purdue Consulting Club
             </div>
           </div>
@@ -63,7 +65,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-cream"
+            className="md:hidden text-warm-dark"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

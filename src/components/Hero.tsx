@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="geometric-bg">
         <div className="geometric-shape w-32 h-32 border-2 border-warm-brown/20 rotate-45"></div>
         <div className="geometric-shape w-24 h-24 bg-warm-brown/10 rounded-full"></div>
-        <div className="geometric-shape w-20 h-20 border border-cream/10 transform rotate-12"></div>
+        <div className="geometric-shape w-20 h-20 border border-gold-hint/10 transform rotate-12"></div>
       </div>
 
       {/* Content */}

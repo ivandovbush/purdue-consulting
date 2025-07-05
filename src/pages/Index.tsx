@@ -6,13 +6,15 @@ import About from '@/components/About';
 import Services from '@/components/Services';
 import Admissions from '@/components/Admissions';
 import Team from '@/components/Team';
+import FacultyAdvisor from '@/components/FacultyAdvisor';
+import PurdueAlumni from '@/components/PurdueAlumni';
 import Partners from '@/components/Partners';
 import Application from '@/components/Application';
 import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-warm-dark">
+    <div className="min-h-screen bg-light-cream">
       <Header />
       <main>
         <Hero />
@@ -20,6 +22,8 @@ const Index = () => {
         <Services />
         <Admissions />
         <Team />
+        <FacultyAdvisor />
+        <PurdueAlumni />
         <Partners />
         <Application />
       </main>

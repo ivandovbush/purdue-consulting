@@ -63,13 +63,15 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom warm brown/tan colors to match the presentation
-				'warm-dark': 'hsl(30 15% 8%)',
-				'warm-brown': 'hsl(35 60% 40%)',
-				'warm-tan': 'hsl(40 50% 60%)',
-				'warm-light': 'hsl(45 40% 85%)',
-				'cream': 'hsl(45 20% 95%)',
-				'mid-brown': 'hsl(35 40% 55%)',
+				// Updated warm color palette with lighter cream, tan, and gold hints
+				'light-cream': 'hsl(48 25% 97%)',
+				'warm-dark': 'hsl(25 20% 15%)',
+				'warm-brown': 'hsl(35 65% 45%)',
+				'warm-tan': 'hsl(42 55% 65%)',
+				'light-tan': 'hsl(45 40% 80%)',
+				'cream': 'hsl(48 30% 94%)',
+				'mid-brown': 'hsl(35 50% 60%)',
+				'gold-hint': 'hsl(45 70% 75%)',
 			},
 			fontFamily: {
 				'space-grotesk': ['Space Grotesk', 'sans-serif'],
