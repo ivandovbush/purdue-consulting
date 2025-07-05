@@ -109,8 +109,8 @@ const Application = () => {
             </h2>
             <div className="w-20 h-1 bg-gold mx-auto mb-6"></div>
             <p className="text-mid-gray text-lg max-w-2xl mx-auto font-inter">
-              Take the first step towards joining Purdue's most elite consulting organization. 
-              Our application process is designed to identify exceptional talent.
+              Take the first step toward joining Purdue’s most welcoming consulting community. Our 
+              application process encourages all motivated students to grow and contribute.
             </p>
           </div>
 
@@ -124,7 +124,7 @@ const Application = () => {
                     <div className="w-2 h-2 bg-gold rounded-full mt-2 flex-shrink-0"></div>
                     <div>
                       <h4 className="font-inter font-semibold text-white">Academic Excellence</h4>
-                      <p className="text-mid-gray text-sm">Minimum 3.5 GPA required</p>
+                      <p className="text-mid-gray text-sm">Minimum 3.7 GPA required</p>
                     </div>
                   </div>
                   
@@ -157,8 +157,8 @@ const Application = () => {
               <div className="bg-gradient-to-br from-gold/10 to-transparent p-6 rounded-lg border border-gold/20">
                 <h4 className="font-space-grotesk font-semibold text-white mb-3">Next Steps</h4>
                 <p className="text-mid-gray text-sm font-inter mb-4">
-                  After submitting your application, you'll receive an email within 48 hours 
-                  confirming receipt and next steps in our selection process.
+                  After submitting your application, you'll receive an email within 1 week 
+                  confirming the next steps in joining the team.
                 </p>
                 <p className="text-gold text-sm font-inter font-medium">
                   Application Deadline: Rolling Admissions
