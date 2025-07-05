@@ -16,7 +16,7 @@ const About = () => {
             </div>
             
             <p className="text-mid-gray text-lg leading-relaxed font-inter">
-              The Purdue Elite Consulting Club stands as the university's most selective 
+              The Purdue Elite Consulting Club stands as the university's most accessible 
               business organization, dedicated to developing the next generation of strategic 
               thinkers and business leaders.
             </p>
@@ -61,16 +61,16 @@ const About = () => {
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-gold rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-inter font-semibold text-white">Innovation</h4>
-                      <p className="text-mid-gray text-sm">Thinking creatively to solve complex business challenges</p>
+                      <h4 className="font-inter font-semibold text-white">Accessibility</h4>
+                      <p className="text-mid-gray text-sm">Welcoming all students eager to grow through hands-on experience</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-gold rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-inter font-semibold text-white">Integrity</h4>
-                      <p className="text-mid-gray text-sm">Building trust through transparent and ethical practices</p>
+                      <h4 className="font-inter font-semibold text-white">Growth</h4>
+                      <p className="text-mid-gray text-sm">Equipping members with the tools to succeed in consulting and beyond</p>
                     </div>
                   </div>
                   
