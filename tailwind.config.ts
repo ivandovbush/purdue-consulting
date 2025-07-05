@@ -63,10 +63,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom consulting club colors
-				dark: '#0D0D0D',
-				gold: '#CBA135',
-				'mid-gray': '#B0B0B0',
+				// Custom warm brown/tan colors to match the presentation
+				'warm-dark': 'hsl(30 15% 8%)',
+				'warm-brown': 'hsl(35 60% 40%)',
+				'warm-tan': 'hsl(40 50% 60%)',
+				'warm-light': 'hsl(45 40% 85%)',
+				'cream': 'hsl(45 20% 95%)',
+				'mid-brown': 'hsl(35 40% 55%)',
 			},
 			fontFamily: {
 				'space-grotesk': ['Space Grotesk', 'sans-serif'],
