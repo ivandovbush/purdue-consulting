@@ -6,7 +6,7 @@ const Admissions = () => {
     {
       step: "01",
       title: "Application",
-      description: "Submit your application including academic transcripts, resume, and personal statement demonstrating your passion for consulting.",
+      description: "Submit your application including resume, and personal statement demonstrating your passion for consulting.",
       timeline: "Rolling Admissions"
     },
     // {
@@ -32,8 +32,8 @@ const Admissions = () => {
           </h2>
           <div className="w-20 h-1 bg-gold mx-auto mb-6"></div>
           <p className="text-mid-gray text-lg max-w-2xl mx-auto font-inter">
-            Our selective three-step process ensures we admit only the most dedicated 
-            and talented students ready to excel in consulting.
+            Our open application process welcomes all students eager to grow, while our strike policy
+            ensures commitment and accountability throughout their consulting journey.
           </p>
         </div>
 
@@ -78,8 +78,8 @@ const Admissions = () => {
             <div className="bg-gradient-to-r from-gold/10 to-transparent p-8 rounded-lg border border-gold/20">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                  <div className="text-3xl font-space-grotesk font-bold text-gold mb-2">12%</div>
-                  <div className="text-mid-gray text-sm font-inter">Acceptance Rate</div>
+                  <div className="text-3xl font-space-grotesk font-bold text-gold mb-2">82%</div>
+                  <div className="text-mid-gray text-sm font-inter">Job Placement Rate</div>
                 </div>
                 <div>
                   <div className="text-3xl font-space-grotesk font-bold text-gold mb-2">3.7+</div>
