@@ -25,12 +25,12 @@ const FacultyAdvisor = () => {
                 <div className="flex-shrink-0">
                   <Avatar className="w-32 h-32 border-4 border-warm-brown">
                     <AvatarImage 
-                      src="/placeholder.svg" 
+                      src="/lovable-uploads/lucky_cho.jpeg" 
                       alt="Faculty Advisor"
                       className="object-cover"
                     />
                     <AvatarFallback className="bg-warm-brown text-cream text-2xl font-bold">
-                      FA
+                      Fa
                     </AvatarFallback>
                   </Avatar>
                 </div>
@@ -38,30 +38,30 @@ const FacultyAdvisor = () => {
                 {/* Content */}
                 <div className="flex-1 text-center md:text-left">
                   <h3 className="font-space-grotesk font-bold text-2xl md:text-3xl mb-2 text-warm-dark">
-                    Dr. [Advisor Name]
+                    Dr. Lucky Cho
                   </h3>
                   <p className="text-warm-brown font-semibold text-lg mb-4">
-                    Professor of Business Strategy
+                    Edwardson School of Industrial Engineering
                   </p>
                   
                   <div className="space-y-3 mb-6">
                     <div className="flex items-center justify-center md:justify-start gap-3 text-mid-brown">
                       <Mail className="w-5 h-5" />
-                      <span>advisor@purdue.edu</span>
+                      <span>cho568@purdue.edu</span>
                     </div>
-                    <div className="flex items-center justify-center md:justify-start gap-3 text-mid-brown">
+                    {/* <div className="flex items-center justify-center md:justify-start gap-3 text-mid-brown">
                       <Phone className="w-5 h-5" />
                       <span>(765) 494-XXXX</span>
-                    </div>
+                    </div> */}
                     <div className="flex items-center justify-center md:justify-start gap-3 text-mid-brown">
                       <MapPin className="w-5 h-5" />
-                      <span>Krannert Building, Room XXX</span>
+                      <span>315 N. Grant Street, Office 347</span>
                     </div>
                   </div>
 
                   <p className="text-warm-dark leading-relaxed">
                     With over 15 years of experience in strategic consulting and academic research, 
-                    Dr. [Advisor Name] brings invaluable expertise to our club. Their guidance helps 
+                    Dr. Lucky brings invaluable expertise to our club. Their guidance helps 
                     bridge the gap between academic theory and real-world consulting practice, 
                     ensuring our members are well-prepared for successful careers in consulting.
                   </p>
