@@ -18,14 +18,14 @@ const Admissions = () => {
   ];
 
   return (
-    <section id="admissions" className="py-20 bg-warm-dark">
+    <section id="admissions" className="py-20 bg-cream">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-yellow-500">
-            Admissions <span className="text-[#FEF7E5]">Process</span>
+            Admissions <span className="text-warm-dark">Process</span>
           </h2>
           <div className="w-20 h-1 bg-warm-brown mx-auto mb-6"></div>
-          <p className="text-[#FEF7E5] text-lg max-w-2xl mx-auto font-inter">
+          <p className="text-warm-dark text-lg max-w-2xl mx-auto font-inter">
             Our open application process welcomes all students eager to grow, while our strike policy
             ensures commitment and accountability throughout their consulting journey.
           </p>
@@ -50,14 +50,14 @@ const Admissions = () => {
 
                   {/* Content */}
                   <div className="flex-1 pt-2">
-                    <div className="bg-gradient-to-br from-warm-brown/20 to-transparent backdrop-blur-sm border border-light-tan rounded-lg p-6 hover:border-yellow-500/50 transition-all duration-300 shadow-lg">
+                    <div className="bg-light-cream border border-warm-brown/20 rounded-lg p-6 hover:border-yellow-500/50 transition-all duration-300 shadow-lg">
                       <h3 className="font-space-grotesk font-semibold text-xl text-yellow-500 mb-3">
                         {step.title}
                       </h3>
-                      <p className="text-[#FEF7E5] font-inter leading-relaxed mb-4">
+                      <p className="text-warm-dark font-inter leading-relaxed mb-4">
                         {step.description}
                       </p>
-                      <div className="inline-block bg-warm-brown/30 text-yellow-500 px-3 py-1 rounded-full text-sm font-inter font-medium">
+                      <div className="inline-block bg-warm-brown/20 text-yellow-500 px-3 py-1 rounded-full text-sm font-inter font-medium">
                         {step.timeline}
                       </div>
                     </div>
@@ -69,19 +69,19 @@ const Admissions = () => {
 
           {/* Admission Stats */}
           <div className="mt-16 text-center">
-            <div className="bg-gradient-to-r from-warm-brown/20 to-transparent p-8 rounded-lg border border-light-tan shadow-lg">
+            <div className="bg-light-cream border border-warm-brown/20 p-8 rounded-lg shadow-lg">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
                   <div className="text-3xl font-space-grotesk font-bold text-yellow-500 mb-2">82%</div>
-                  <div className="text-[#FEF7E5] text-sm font-inter">Job Placement Rate</div>
+                  <div className="text-warm-dark text-sm font-inter">Job Placement Rate</div>
                 </div>
                 <div>
                   <div className="text-3xl font-space-grotesk font-bold text-yellow-500 mb-2">3.7+</div>
-                  <div className="text-[#FEF7E5] text-sm font-inter">Average GPA</div>
+                  <div className="text-warm-dark text-sm font-inter">Average GPA</div>
                 </div>
                 <div>
                   <div className="text-3xl font-space-grotesk font-bold text-yellow-500 mb-2">1 week</div>
-                  <div className="text-[#FEF7E5] text-sm font-inter">Application Review Time</div>
+                  <div className="text-warm-dark text-sm font-inter">Application Review Time</div>
                 </div>
               </div>
             </div>

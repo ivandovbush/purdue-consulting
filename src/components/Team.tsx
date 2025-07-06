@@ -61,14 +61,14 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="py-20 bg-warm-dark">
+    <section id="team" className="py-20 bg-cream">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-yellow-500">
-            Our <span className="text-[#FEF7E5]">Team</span>
+            Our <span className="text-warm-dark">Team</span>
           </h2>
           <div className="w-20 h-1 bg-warm-brown mx-auto mb-6"></div>
-          <p className="text-[#FEF7E5] text-lg max-w-2xl mx-auto font-inter">
+          <p className="text-warm-dark text-lg max-w-2xl mx-auto font-inter">
             Meet the exceptional leaders driving innovation and excellence at PECC. 
             Our executive board brings diverse expertise and unwavering commitment to success.
           </p>
@@ -78,7 +78,7 @@ const Team = () => {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="group relative bg-gradient-to-br from-warm-brown/20 to-transparent backdrop-blur-sm border border-light-tan rounded-lg overflow-hidden hover:border-yellow-500/50 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="group relative bg-light-cream border border-warm-brown/20 rounded-lg overflow-hidden hover:border-yellow-500/50 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               {/* Profile Image */}
               <div className="w-full h-64 relative overflow-hidden">
@@ -89,7 +89,7 @@ const Team = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-warm-dark/80 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4">
-                  <h3 className="font-space-grotesk font-semibold text-lg text-[#FEF7E5]">
+                  <h3 className="font-space-grotesk font-semibold text-lg text-cream">
                     {member.name}
                   </h3>
                   <p className="text-yellow-500 text-sm font-inter">{member.position}</p>
@@ -101,14 +101,14 @@ const Team = () => {
                 <h3 className="font-space-grotesk font-semibold text-xl text-yellow-500 mb-2">
                   {member.name}
                 </h3>
-                <p className="text-[#FEF7E5] text-sm font-inter mb-1">{member.position}</p>
-                <p className="text-[#FEF7E5] text-sm font-inter mb-3">{member.major} • {member.year}</p>
-                <p className="text-[#FEF7E5] text-sm font-inter leading-relaxed mb-4">
+                <p className="text-cream text-sm font-inter mb-1">{member.position}</p>
+                <p className="text-cream text-sm font-inter mb-3">{member.major} • {member.year}</p>
+                <p className="text-cream text-sm font-inter leading-relaxed mb-4">
                   {member.bio}
                 </p>
                 <a
                   href={member.linkedin}
-                  className="inline-flex items-center space-x-2 text-yellow-500 hover:text-[#FEF7E5] transition-colors duration-300"
+                  className="inline-flex items-center space-x-2 text-yellow-500 hover:text-cream transition-colors duration-300"
                 >
                   <Linkedin className="w-4 h-4" />
                   <span className="text-sm font-inter">Connect</span>
