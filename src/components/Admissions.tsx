@@ -50,7 +50,7 @@ const Admissions = () => {
 
                   {/* Content */}
                   <div className="flex-1 pt-2">
-                    <div className="brown-gradient-card rounded-lg p-6 transition-all duration-300 shadow-lg">
+                    <div className="bg-[#654321] rounded-lg p-6 transition-all duration-300 shadow-lg">
                       <h3 className="font-space-grotesk font-semibold text-xl text-yellow-500 mb-3">
                         {step.title}
                       </h3>
@@ -69,7 +69,7 @@ const Admissions = () => {
 
           {/* Admission Stats */}
           <div className="mt-16 text-center">
-            <div className="brown-gradient-card p-8 rounded-lg shadow-lg">
+            <div className="bg-[#654321] p-8 rounded-lg shadow-lg">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
                   <div className="text-3xl font-space-grotesk font-bold text-yellow-500 mb-2">82%</div>

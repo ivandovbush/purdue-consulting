@@ -38,7 +38,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group brown-gradient-card rounded-lg p-8 hover:transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="bg-[#654321] rounded-lg p-8 hover:transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               <div className="mb-6">
                 <h3 className="font-space-grotesk font-semibold text-xl text-yellow-500 mb-4">

@@ -18,7 +18,7 @@ const FacultyAdvisor = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <Card className="brown-gradient-card shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <Card className="bg-[#654321] shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardContent className="p-8">
               <div className="flex flex-col md:flex-row items-center gap-8">
                 {/* Avatar */}

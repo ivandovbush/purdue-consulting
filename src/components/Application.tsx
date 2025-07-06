@@ -154,7 +154,7 @@ const Application = () => {
                 </div>
               </div>
 
-              <div className="brown-gradient-card p-6 rounded-lg">
+              <div className="bg-[#654321] p-6 rounded-lg">
                 <h4 className="font-space-grotesk font-semibold text-yellow-500 mb-3">Next Steps</h4>
                 <p className="text-[#FEF7E5] text-sm font-inter mb-4">
                   After submitting your application, you'll receive an email within 1 week 
@@ -167,7 +167,7 @@ const Application = () => {
             </div>
 
             {/* Application Form */}
-            <div className="brown-gradient-card rounded-lg p-8">
+            <div className="bg-[#654321] rounded-lg p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>

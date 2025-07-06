@@ -78,7 +78,7 @@ const Team = () => {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="group relative brown-gradient-card rounded-lg overflow-hidden transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="group relative bg-[#654321] rounded-lg overflow-hidden transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               {/* Profile Image */}
               <div className="w-full h-64 relative overflow-hidden">

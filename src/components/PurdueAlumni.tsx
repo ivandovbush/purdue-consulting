@@ -59,17 +59,17 @@ const PurdueAlumni = () => {
 
         {/* Network Stats */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto">
-          <div className="text-center p-6 brown-gradient-card rounded-lg">
+          <div className="text-center p-6 bg-[#654321] rounded-lg">
             <Users className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
             <div className="text-3xl font-bold text-yellow-500 mb-2">150+</div>
             <div className="text-[#FEF7E5]">Alumni Network</div>
           </div>
-          <div className="text-center p-6 brown-gradient-card rounded-lg">
+          <div className="text-center p-6 bg-[#654321] rounded-lg">
             <Building className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
             <div className="text-3xl font-bold text-yellow-500 mb-2">50+</div>
             <div className="text-[#FEF7E5]">Top Consulting Firms</div>
           </div>
-          <div className="text-center p-6 brown-gradient-card rounded-lg">
+          <div className="text-center p-6 bg-[#654321] rounded-lg">
             <MapPin className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
             <div className="text-3xl font-bold text-yellow-500 mb-2">25+</div>
             <div className="text-[#FEF7E5]">Global Cities</div>
@@ -79,7 +79,7 @@ const PurdueAlumni = () => {
         {/* Alumni Profiles */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {alumni.map((person, index) => (
-            <Card key={index} className="brown-gradient-card hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <Card key={index} className="bg-[#654321] hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardContent className="p-6 text-center">
                 <Avatar className="w-20 h-20 mx-auto mb-4 border-2 border-yellow-500">
                   <AvatarImage 
@@ -119,7 +119,7 @@ const PurdueAlumni = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-12">
-          <div className="brown-gradient-card rounded-lg p-8 max-w-2xl mx-auto">
+          <div className="bg-[#654321] rounded-lg p-8 max-w-2xl mx-auto">
             <h3 className="font-space-grotesk font-bold text-2xl mb-4 text-yellow-500">
               Join Our Growing Network
             </h3>

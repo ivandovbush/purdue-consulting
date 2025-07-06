@@ -56,7 +56,7 @@ const Partners = () => {
           {partners.map((partner, index) => (
             <div
               key={index}
-              className="group brown-gradient-card rounded-lg p-6 hover:transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="group bg-[#654321] rounded-lg p-6 hover:transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#FEF7E5] rounded-lg flex items-center justify-center mx-auto mb-4 transition-all duration-300 overflow-hidden">
@@ -77,7 +77,7 @@ const Partners = () => {
         {/* Partnership Benefits */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center p-6">
-            <div className="w-12 h-12 brown-gradient-card rounded-lg flex items-center justify-center mx-auto mb-4">
+            <div className="w-12 h-12 bg-[#654321] rounded-lg flex items-center justify-center mx-auto mb-4">
               <div className="w-6 h-6 bg-yellow-500 rounded-sm"></div>
             </div>
             <h3 className="font-space-grotesk font-semibold text-yellow-500 mb-2">Direct Recruitment</h3>

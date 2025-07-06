@@ -45,7 +45,7 @@ const About = () => {
 
           {/* Right Column - Visual Element */}
           <div className="relative">
-            <div className="brown-gradient-card p-8 rounded-lg shadow-lg">
+            <div className="bg-[#654321] p-8 rounded-lg shadow-lg">
               <div className="space-y-4">
                 <h3 className="font-space-grotesk font-semibold text-xl text-yellow-500">Our Values</h3>
                 
