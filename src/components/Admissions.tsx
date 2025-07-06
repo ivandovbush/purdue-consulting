@@ -18,14 +18,14 @@ const Admissions = () => {
   ];
 
   return (
-    <section id="admissions" className="py-20 bg-cream">
+    <section id="admissions" className="py-20 bg-[#FEF7E5]">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-yellow-500">
-            Admissions <span className="text-mocha-brown">Process</span>
+            Admissions <span className="text-[#654321]">Process</span>
           </h2>
-          <div className="w-20 h-1 bg-warm-brown mx-auto mb-6"></div>
-          <p className="text-mocha-brown text-lg max-w-2xl mx-auto font-inter">
+          <div className="w-20 h-1 bg-[#654321] mx-auto mb-6"></div>
+          <p className="text-[#654321] text-lg max-w-2xl mx-auto font-inter">
             Our open application process welcomes all students eager to grow, while our strike policy
             ensures commitment and accountability throughout their consulting journey.
           </p>
@@ -37,27 +37,27 @@ const Admissions = () => {
               <div key={index} className="relative">
                 {/* Connecting Line */}
                 {index < steps.length - 1 && (
-                  <div className="absolute left-8 top-20 w-px h-24 bg-gradient-to-b from-warm-brown to-warm-brown/20"></div>
+                  <div className="absolute left-8 top-20 w-px h-24 bg-gradient-to-b from-[#654321] to-[#654321]/20"></div>
                 )}
                 
                 <div className="flex items-start space-x-8">
                   {/* Step Number */}
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-yellow-500 text-mocha-brown rounded-full flex items-center justify-center font-space-grotesk font-bold text-lg shadow-lg">
+                    <div className="w-16 h-16 bg-yellow-500 text-[#654321] rounded-full flex items-center justify-center font-space-grotesk font-bold text-lg shadow-lg">
                       {step.step}
                     </div>
                   </div>
 
                   {/* Content */}
                   <div className="flex-1 pt-2">
-                    <div className="bg-dark-cream border border-warm-brown/20 rounded-lg p-6 hover:border-yellow-500/50 transition-all duration-300 shadow-lg">
+                    <div className="brown-gradient-card rounded-lg p-6 transition-all duration-300 shadow-lg">
                       <h3 className="font-space-grotesk font-semibold text-xl text-yellow-500 mb-3">
                         {step.title}
                       </h3>
-                      <p className="text-mocha-brown font-inter leading-relaxed mb-4">
+                      <p className="text-[#FEF7E5] font-inter leading-relaxed mb-4">
                         {step.description}
                       </p>
-                      <div className="inline-block bg-light-cream text-yellow-500 px-3 py-1 rounded-full text-sm font-inter font-medium">
+                      <div className="inline-block bg-[#FEF7E5] text-[#654321] px-3 py-1 rounded-full text-sm font-inter font-medium">
                         {step.timeline}
                       </div>
                     </div>
@@ -69,19 +69,19 @@ const Admissions = () => {
 
           {/* Admission Stats */}
           <div className="mt-16 text-center">
-            <div className="bg-dark-cream border border-warm-brown/20 p-8 rounded-lg shadow-lg">
+            <div className="brown-gradient-card p-8 rounded-lg shadow-lg">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
                   <div className="text-3xl font-space-grotesk font-bold text-yellow-500 mb-2">82%</div>
-                  <div className="text-mocha-brown text-sm font-inter">Job Placement Rate</div>
+                  <div className="text-[#FEF7E5] text-sm font-inter">Job Placement Rate</div>
                 </div>
                 <div>
                   <div className="text-3xl font-space-grotesk font-bold text-yellow-500 mb-2">3.7+</div>
-                  <div className="text-mocha-brown text-sm font-inter">Average GPA</div>
+                  <div className="text-[#FEF7E5] text-sm font-inter">Average GPA</div>
                 </div>
                 <div>
                   <div className="text-3xl font-space-grotesk font-bold text-yellow-500 mb-2">1 week</div>
-                  <div className="text-mocha-brown text-sm font-inter">Application Review Time</div>
+                  <div className="text-[#FEF7E5] text-sm font-inter">Application Review Time</div>
                 </div>
               </div>
             </div>

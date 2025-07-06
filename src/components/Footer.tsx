@@ -4,7 +4,7 @@ import { Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-warm-dark border-t border-light-tan py-12">
+    <footer className="bg-[#654321] border-t border-[#FEF7E5]/20 py-12">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-light-tan pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-[#FEF7E5]/20 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-[#FEF7E5] text-sm font-inter">
             © 2024 Purdue Elite Consulting Club. All rights reserved.
           </p>

@@ -23,7 +23,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-light-cream/90 backdrop-blur-md border-b border-warm-brown/30">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#FEF7E5]/90 backdrop-blur-md border-b border-[#654321]/30">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo and Brand */}
@@ -35,7 +35,7 @@ const Header = () => {
               className="w-8 h-8 object-contain"
             />
             {/* Text - hidden on mobile, visible on desktop */}
-            <div className="hidden md:block font-space-grotesk font-bold text-xl text-warm-dark">
+            <div className="hidden md:block font-space-grotesk font-bold text-xl text-[#654321]">
               The Purdue Consulting Club
             </div>
           </div>
@@ -46,7 +46,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-warm-dark hover:text-yellow-500 transition-colors duration-300 font-inter font-medium"
+                className="text-[#654321] hover:text-yellow-500 transition-colors duration-300 font-inter font-medium"
               >
                 {item.name}
               </a>
@@ -57,7 +57,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Button 
               onClick={scrollToApplication}
-              className="bg-warm-brown hover:bg-warm-brown/80 text-cream font-semibold px-6 py-2 rounded-md transition-all duration-300"
+              className="bg-[#654321] hover:bg-[#5a3b1e] text-[#FEF7E5] font-semibold px-6 py-2 rounded-md transition-all duration-300"
             >
               Apply Now
             </Button>
@@ -65,7 +65,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-warm-dark"
+            className="md:hidden text-[#654321]"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -76,13 +76,13 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 py-4 border-t border-warm-brown/30">
+          <div className="md:hidden mt-4 py-4 border-t border-[#654321]/30">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-warm-dark hover:text-yellow-500 transition-colors duration-300 font-inter font-medium"
+                  className="text-[#654321] hover:text-yellow-500 transition-colors duration-300 font-inter font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
@@ -93,7 +93,7 @@ const Header = () => {
                   scrollToApplication();
                   setIsMenuOpen(false);
                 }}
-                className="bg-warm-brown hover:bg-warm-brown/80 text-cream font-semibold px-6 py-2 rounded-md transition-all duration-300 w-fit"
+                className="bg-[#654321] hover:bg-[#5a3b1e] text-[#FEF7E5] font-semibold px-6 py-2 rounded-md transition-all duration-300 w-fit"
               >
                 Apply Now
               </Button>

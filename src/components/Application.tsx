@@ -99,16 +99,16 @@ const Application = () => {
   };
 
   return (
-    <section id="application" className="py-20 bg-cream">
+    <section id="application" className="py-20 bg-[#FEF7E5]">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-yellow-500">
-              Ready to <span className="text-mocha-brown">Apply?</span>
+              Ready to <span className="text-[#654321]">Apply?</span>
             </h2>
-            <div className="w-20 h-1 bg-warm-brown mx-auto mb-6"></div>
-            <p className="text-mocha-brown text-lg max-w-2xl mx-auto font-inter">
+            <div className="w-20 h-1 bg-[#654321] mx-auto mb-6"></div>
+            <p className="text-[#654321] text-lg max-w-2xl mx-auto font-inter">
               Take the first step toward joining Purdue's most welcoming consulting community. Our 
               application process encourages all motivated students to grow and contribute.
             </p>
@@ -124,7 +124,7 @@ const Application = () => {
                     <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
                     <div>
                       <h4 className="font-inter font-semibold text-yellow-500">Academic Excellence</h4>
-                      <p className="text-mocha-brown text-sm">Minimum 3.7 GPA required</p>
+                      <p className="text-[#654321] text-sm">Minimum 3.7 GPA required</p>
                     </div>
                   </div>
                   
@@ -132,7 +132,7 @@ const Application = () => {
                     <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
                     <div>
                       <h4 className="font-inter font-semibold text-yellow-500">Leadership Experience</h4>
-                      <p className="text-mocha-brown text-sm">Demonstrated leadership in academics, work, or extracurriculars</p>
+                      <p className="text-[#654321] text-sm">Demonstrated leadership in academics, work, or extracurriculars</p>
                     </div>
                   </div>
                   
@@ -140,7 +140,7 @@ const Application = () => {
                     <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
                     <div>
                       <h4 className="font-inter font-semibold text-yellow-500">Professional Interest</h4>
-                      <p className="text-mocha-brown text-sm">Genuine passion for consulting and business strategy</p>
+                      <p className="text-[#654321] text-sm">Genuine passion for consulting and business strategy</p>
                     </div>
                   </div>
                   
@@ -148,15 +148,15 @@ const Application = () => {
                     <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
                     <div>
                       <h4 className="font-inter font-semibold text-yellow-500">Commitment</h4>
-                      <p className="text-mocha-brown text-sm">Ability to dedicate 8-10 hours per week to club activities</p>
+                      <p className="text-[#654321] text-sm">Ability to dedicate 8-10 hours per week to club activities</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-dark-cream p-6 rounded-lg border border-warm-brown/20">
+              <div className="brown-gradient-card p-6 rounded-lg">
                 <h4 className="font-space-grotesk font-semibold text-yellow-500 mb-3">Next Steps</h4>
-                <p className="text-mocha-brown text-sm font-inter mb-4">
+                <p className="text-[#FEF7E5] text-sm font-inter mb-4">
                   After submitting your application, you'll receive an email within 1 week 
                   confirming the next steps in joining the team.
                 </p>
@@ -167,7 +167,7 @@ const Application = () => {
             </div>
 
             {/* Application Form */}
-            <div className="bg-dark-cream border border-warm-brown/30 rounded-lg p-8">
+            <div className="brown-gradient-card rounded-lg p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
@@ -179,7 +179,7 @@ const Application = () => {
                       name="firstName"
                       value={formData.firstName}
                       onChange={handleInputChange}
-                      className="bg-light-cream border-warm-brown text-mocha-brown focus:border-yellow-500"
+                      className="bg-[#FEF7E5] border-[#654321] text-[#654321] focus:border-yellow-500"
                       required
                     />
                   </div>
@@ -192,7 +192,7 @@ const Application = () => {
                       name="lastName"
                       value={formData.lastName}
                       onChange={handleInputChange}
-                      className="bg-light-cream border-warm-brown text-mocha-brown focus:border-yellow-500"
+                      className="bg-[#FEF7E5] border-[#654321] text-[#654321] focus:border-yellow-500"
                       required
                     />
                   </div>
@@ -208,7 +208,7 @@ const Application = () => {
                     type="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="bg-light-cream border-warm-brown text-mocha-brown focus:border-yellow-500"
+                    className="bg-[#FEF7E5] border-[#654321] text-[#654321] focus:border-yellow-500"
                     required
                   />
                 </div>
@@ -224,7 +224,7 @@ const Application = () => {
                       value={formData.major}
                       onChange={handleInputChange}
                       placeholder="e.g., Finance"
-                      className="bg-light-cream border-warm-brown text-mocha-brown focus:border-yellow-500"
+                      className="bg-[#FEF7E5] border-[#654321] text-[#654321] focus:border-yellow-500"
                       required
                     />
                   </div>
@@ -238,7 +238,7 @@ const Application = () => {
                       value={formData.year}
                       onChange={handleInputChange}
                       placeholder="e.g., Sophomore"
-                      className="bg-light-cream border-warm-brown text-mocha-brown focus:border-yellow-500"
+                      className="bg-[#FEF7E5] border-[#654321] text-[#654321] focus:border-yellow-500"
                       required
                     />
                   </div>
@@ -254,7 +254,7 @@ const Application = () => {
                     value={formData.motivation}
                     onChange={handleInputChange}
                     rows={4}
-                    className="bg-light-cream border-warm-brown text-mocha-brown focus:border-yellow-500 resize-none"
+                    className="bg-[#FEF7E5] border-[#654321] text-[#654321] focus:border-yellow-500 resize-none"
                     required
                   />
                 </div>
@@ -262,7 +262,7 @@ const Application = () => {
                 <Button 
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-warm-brown hover:bg-warm-brown/80 text-light-cream font-semibold py-3 transition-all duration-300 disabled:opacity-50"
+                  className="w-full bg-yellow-500 hover:bg-yellow-500/80 text-[#654321] font-semibold py-3 transition-all duration-300 disabled:opacity-50"
                 >
                   {isSubmitting ? 'Submitting...' : 'Submit Application'}
                 </Button>

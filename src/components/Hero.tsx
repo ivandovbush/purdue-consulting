@@ -15,9 +15,9 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#FEF7E5]">
       {/* Geometric Background */}
       <div className="geometric-bg">
-        <div className="geometric-shape w-32 h-32 border-2 border-warm-brown/20 rotate-45"></div>
-        <div className="geometric-shape w-24 h-24 bg-warm-brown/10 rounded-full"></div>
-        <div className="geometric-shape w-20 h-20 border border-gold-hint/10 transform rotate-12"></div>
+        <div className="geometric-shape w-32 h-32 border-2 border-[#654321]/20 rotate-45"></div>
+        <div className="geometric-shape w-24 h-24 bg-[#654321]/10 rounded-full"></div>
+        <div className="geometric-shape w-20 h-20 border border-yellow-500/10 transform rotate-12"></div>
       </div>
 
       {/* Content */}
@@ -28,7 +28,7 @@ const Hero = () => {
             <span className="block text-yellow-500">Meets Opportunity</span>
           </h1>
           
-          <p className="text-warm-dark text-lg md:text-xl mb-8 max-w-2xl mx-auto font-inter">
+          <p className="text-[#654321] text-lg md:text-xl mb-8 max-w-2xl mx-auto font-inter">
             Purdue University's premier consulting club connecting elite students with 
             startups, consulting firms, and business leaders across the nation.
           </p>
@@ -36,11 +36,11 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               onClick={scrollToApplication}
-              className="bg-warm-brown hover:bg-warm-brown/80 text-cream font-semibold px-6 sm:px-8 py-3 rounded-md transition-all duration-300 text-base sm:text-lg w-full sm:w-auto"
+              className="bg-[#654321] hover:bg-[#5a3b1e] text-[#FEF7E5] font-semibold px-6 sm:px-8 py-3 rounded-md transition-all duration-300 text-base sm:text-lg w-full sm:w-auto"
             >
               Join Our Elite Network
             </Button>
-            <Button variant="outline" size="sm" className="border-warm-brown text-warm-brown hover:bg-warm-brown hover:text-cream font-semibold rounded-md transition-all duration-300 w-full sm:w-auto">
+            <Button variant="outline" size="sm" className="border-[#654321] text-[#654321] hover:bg-[#654321] hover:text-[#FEF7E5] font-semibold rounded-md transition-all duration-300 w-full sm:w-auto">
               Learn More
             </Button>
           </div>
@@ -49,7 +49,7 @@ const Hero = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ChevronDown className="w-6 h-6 text-warm-brown" />
+        <ChevronDown className="w-6 h-6 text-[#654321]" />
       </div>
     </section>
   );
