@@ -99,16 +99,16 @@ const Application = () => {
   };
 
   return (
-    <section id="application" className="py-20 bg-light-cream">
+    <section id="application" className="py-20 bg-cream">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-warm-dark">
-              Ready to <span className="text-warm-brown">Apply?</span>
+            <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-yellow-500">
+              Ready to <span className="text-mocha-brown">Apply?</span>
             </h2>
-            <div className="w-20 h-1 bg-gold-hint mx-auto mb-6"></div>
-            <p className="text-mid-brown text-lg max-w-2xl mx-auto font-inter">
+            <div className="w-20 h-1 bg-warm-brown mx-auto mb-6"></div>
+            <p className="text-mocha-brown text-lg max-w-2xl mx-auto font-inter">
               Take the first step toward joining Purdue's most welcoming consulting community. Our 
               application process encourages all motivated students to grow and contribute.
             </p>
@@ -118,60 +118,60 @@ const Application = () => {
             {/* Application Info */}
             <div className="space-y-8">
               <div>
-                <h3 className="font-space-grotesk font-semibold text-2xl text-warm-brown mb-4">Application Requirements</h3>
+                <h3 className="font-space-grotesk font-semibold text-2xl text-yellow-500 mb-4">Application Requirements</h3>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-warm-brown rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-inter font-semibold text-warm-brown">Academic Excellence</h4>
-                      <p className="text-mid-brown text-sm">Minimum 3.7 GPA required</p>
+                      <h4 className="font-inter font-semibold text-yellow-500">Academic Excellence</h4>
+                      <p className="text-mocha-brown text-sm">Minimum 3.7 GPA required</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-warm-brown rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-inter font-semibold text-warm-brown">Leadership Experience</h4>
-                      <p className="text-mid-brown text-sm">Demonstrated leadership in academics, work, or extracurriculars</p>
+                      <h4 className="font-inter font-semibold text-yellow-500">Leadership Experience</h4>
+                      <p className="text-mocha-brown text-sm">Demonstrated leadership in academics, work, or extracurriculars</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-warm-brown rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-inter font-semibold text-warm-brown">Professional Interest</h4>
-                      <p className="text-mid-brown text-sm">Genuine passion for consulting and business strategy</p>
+                      <h4 className="font-inter font-semibold text-yellow-500">Professional Interest</h4>
+                      <p className="text-mocha-brown text-sm">Genuine passion for consulting and business strategy</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-warm-brown rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-inter font-semibold text-warm-brown">Commitment</h4>
-                      <p className="text-mid-brown text-sm">Ability to dedicate 8-10 hours per week to club activities</p>
+                      <h4 className="font-inter font-semibold text-yellow-500">Commitment</h4>
+                      <p className="text-mocha-brown text-sm">Ability to dedicate 8-10 hours per week to club activities</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-gold-hint/10 to-transparent p-6 rounded-lg border border-gold-hint/20">
-                <h4 className="font-space-grotesk font-semibold text-warm-brown mb-3">Next Steps</h4>
-                <p className="text-mid-brown text-sm font-inter mb-4">
+              <div className="bg-dark-cream p-6 rounded-lg border border-warm-brown/20">
+                <h4 className="font-space-grotesk font-semibold text-yellow-500 mb-3">Next Steps</h4>
+                <p className="text-mocha-brown text-sm font-inter mb-4">
                   After submitting your application, you'll receive an email within 1 week 
                   confirming the next steps in joining the team.
                 </p>
-                <p className="text-warm-brown text-sm font-inter font-medium">
+                <p className="text-yellow-500 text-sm font-inter font-medium">
                   Application Deadline: Rolling Admissions
                 </p>
               </div>
             </div>
 
             {/* Application Form */}
-            <div className="bg-cream/80 backdrop-blur-sm border border-warm-tan/30 rounded-lg p-8">
+            <div className="bg-dark-cream border border-warm-brown/30 rounded-lg p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <Label htmlFor="firstName" className="text-yellow-700 font-inter">
+                    <Label htmlFor="firstName" className="text-yellow-500 font-inter">
                       First Name <span className="text-red-500">*</span>
                     </Label>
                     <Input
@@ -179,12 +179,12 @@ const Application = () => {
                       name="firstName"
                       value={formData.firstName}
                       onChange={handleInputChange}
-                      className="bg-light-cream border-warm-tan text-warm-brown focus:border-gold-hint"
+                      className="bg-light-cream border-warm-brown text-mocha-brown focus:border-yellow-500"
                       required
                     />
                   </div>
                   <div>
-                    <Label htmlFor="lastName" className="text-yellow-700 font-inter">
+                    <Label htmlFor="lastName" className="text-yellow-500 font-inter">
                       Last Name <span className="text-red-500">*</span>
                     </Label>
                     <Input
@@ -192,14 +192,14 @@ const Application = () => {
                       name="lastName"
                       value={formData.lastName}
                       onChange={handleInputChange}
-                      className="bg-light-cream border-warm-tan text-warm-brown focus:border-gold-hint"
+                      className="bg-light-cream border-warm-brown text-mocha-brown focus:border-yellow-500"
                       required
                     />
                   </div>
                 </div>
 
                 <div>
-                  <Label htmlFor="email" className="text-yellow-700 font-inter">
+                  <Label htmlFor="email" className="text-yellow-500 font-inter">
                     Purdue Email <span className="text-red-500">*</span>
                   </Label>
                   <Input
@@ -208,14 +208,14 @@ const Application = () => {
                     type="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="bg-light-cream border-warm-tan text-warm-brown focus:border-gold-hint"
+                    className="bg-light-cream border-warm-brown text-mocha-brown focus:border-yellow-500"
                     required
                   />
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <Label htmlFor="major" className="text-yellow-700 font-inter">
+                    <Label htmlFor="major" className="text-yellow-500 font-inter">
                       Major <span className="text-red-500">*</span>
                     </Label>
                     <Input
@@ -224,12 +224,12 @@ const Application = () => {
                       value={formData.major}
                       onChange={handleInputChange}
                       placeholder="e.g., Finance"
-                      className="bg-light-cream border-warm-tan text-warm-brown focus:border-gold-hint"
+                      className="bg-light-cream border-warm-brown text-mocha-brown focus:border-yellow-500"
                       required
                     />
                   </div>
                   <div>
-                    <Label htmlFor="year" className="text-yellow-700 font-inter">
+                    <Label htmlFor="year" className="text-yellow-500 font-inter">
                       Year <span className="text-red-500">*</span>
                     </Label>
                     <Input
@@ -238,14 +238,14 @@ const Application = () => {
                       value={formData.year}
                       onChange={handleInputChange}
                       placeholder="e.g., Sophomore"
-                      className="bg-light-cream border-warm-tan text-warm-brown focus:border-gold-hint"
+                      className="bg-light-cream border-warm-brown text-mocha-brown focus:border-yellow-500"
                       required
                     />
                   </div>
                 </div>
 
                 <div>
-                  <Label htmlFor="motivation" className="text-yellow-700 font-inter">
+                  <Label htmlFor="motivation" className="text-yellow-500 font-inter">
                     Why do you want to join PECC? (500 words max) <span className="text-red-500">*</span>
                   </Label>
                   <Textarea
@@ -254,7 +254,7 @@ const Application = () => {
                     value={formData.motivation}
                     onChange={handleInputChange}
                     rows={4}
-                    className="bg-light-cream border-warm-tan text-warm-brown focus:border-gold-hint resize-none"
+                    className="bg-light-cream border-warm-brown text-mocha-brown focus:border-yellow-500 resize-none"
                     required
                   />
                 </div>

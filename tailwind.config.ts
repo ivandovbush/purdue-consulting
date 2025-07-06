@@ -63,9 +63,10 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Updated warm color palette with lighter cream, tan, and gold hints
-				'light-cream': 'hsl(48 25% 97%)',
-				'warm-dark': 'hsl(25 20% 15%)',
+				// Updated colors with mocha brown and consistent cream shades
+				'light-cream': '#F9F6F1',
+				'dark-cream': '#F2EDE6',
+				'mocha-brown': '#654321',
 				'warm-brown': 'hsl(35 65% 45%)',
 				'warm-tan': 'hsl(42 55% 65%)',
 				'light-tan': 'hsl(45 40% 80%)',
