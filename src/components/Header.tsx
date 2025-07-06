@@ -46,7 +46,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-mid-brown hover:text-warm-brown transition-colors duration-300 font-inter font-medium"
+                className="text-warm-dark hover:text-yellow-500 transition-colors duration-300 font-inter font-medium"
               >
                 {item.name}
               </a>
@@ -82,7 +82,7 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-mid-brown hover:text-warm-brown transition-colors duration-300 font-inter font-medium"
+                  className="text-warm-dark hover:text-yellow-500 transition-colors duration-300 font-inter font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}

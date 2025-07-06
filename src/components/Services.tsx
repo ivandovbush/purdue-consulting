@@ -21,14 +21,14 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-[#FAF3DD]">
+    <section id="services" className="py-20 bg-warm-dark">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-warm-dark">
-            What We <span className="text-warm-brown">Do</span>
+          <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-yellow-500">
+            What We <span className="text-[#FEF7E5]">Do</span>
           </h2>
           <div className="w-20 h-1 bg-warm-brown mx-auto mb-6"></div>
-          <p className="text-mid-brown text-lg max-w-2xl mx-auto font-inter">
+          <p className="text-[#FEF7E5] text-lg max-w-2xl mx-auto font-inter">
             Empowering students through hands-on consulting experience, professional development, 
             and exclusive access to industry leaders.
           </p>
@@ -38,13 +38,13 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group bg-light-cream backdrop-blur-sm border border-light-tan rounded-lg p-8 hover:border-warm-brown/50 transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="group bg-gradient-to-br from-warm-brown/20 to-transparent backdrop-blur-sm border border-light-tan rounded-lg p-8 hover:border-yellow-500/50 transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               <div className="mb-6">
-                <h3 className="font-space-grotesk font-semibold text-xl text-warm-dark mb-4 group-hover:text-warm-brown transition-colors duration-300">
+                <h3 className="font-space-grotesk font-semibold text-xl text-yellow-500 mb-4 group-hover:text-[#FEF7E5] transition-colors duration-300">
                   {service.title}
                 </h3>
-                <p className="text-mid-brown font-inter leading-relaxed">
+                <p className="text-[#FEF7E5] font-inter leading-relaxed">
                   {service.description}
                 </p>
               </div>
@@ -52,8 +52,8 @@ const Services = () => {
               <div className="space-y-3">
                 {service.features.map((feature, featureIndex) => (
                   <div key={featureIndex} className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-warm-brown rounded-full flex-shrink-0"></div>
-                    <span className="text-mid-brown text-sm font-inter">{feature}</span>
+                    <div className="w-2 h-2 bg-yellow-500 rounded-full flex-shrink-0"></div>
+                    <span className="text-[#FEF7E5] text-sm font-inter">{feature}</span>
                   </div>
                 ))}
               </div>
