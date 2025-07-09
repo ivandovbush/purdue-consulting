@@ -11,7 +11,7 @@ const Team = () => {
       year: "Senior",
       bio: "Former McKinsey intern with expertise in operations strategy and digital transformation.",
       linkedin: "#",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/507f86fa-3d7a-4fce-9d85-9ca49108655b.png"
     },
     {
       name: "Marcus Rodriguez",
@@ -20,7 +20,7 @@ const Team = () => {
       year: "Junior", 
       bio: "Technology consulting specialist with experience at Deloitte and passion for fintech innovation.",
       linkedin: "#",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/504d70be-bef1-4524-bcd3-328680f0bc66.png"
     },
     {
       name: "Emily Watson",
@@ -29,7 +29,7 @@ const Team = () => {
       year: "Senior",
       bio: "Supply chain optimization expert with summer experience at Bain & Company.",
       linkedin: "#",
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/6b8e7100-ba33-4421-9726-8cdd8be82ee2.png"
     },
     {
       name: "David Park",
@@ -38,7 +38,7 @@ const Team = () => {
       year: "Junior",
       bio: "Analytics-driven consultant specializing in market research and business intelligence.",
       linkedin: "#",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/f0c899db-a668-412c-80f6-b18377d4e717.png"
     },
     {
       name: "Amanda Foster",
@@ -47,7 +47,7 @@ const Team = () => {
       year: "Senior",
       bio: "Corporate strategy consultant with extensive network in Fortune 500 companies.",
       linkedin: "#",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/507f86fa-3d7a-4fce-9d85-9ca49108655b.png"
     },
     {
       name: "James Liu",
@@ -56,7 +56,7 @@ const Team = () => {
       year: "Junior",
       bio: "Investment banking and consulting dual expertise with focus on financial strategy.",
       linkedin: "#",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/504d70be-bef1-4524-bcd3-328680f0bc66.png"
     }
   ];
 
@@ -78,14 +78,14 @@ const Team = () => {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="group relative bg-[#654321] rounded-lg overflow-hidden transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="group relative brown-gradient-card rounded-lg overflow-hidden transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               {/* Profile Image */}
               <div className="w-full h-64 relative overflow-hidden">
                 <img 
                   src={member.image} 
                   alt={member.name}
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
+                  className="w-full h-full object-cover object-center transition-all duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#654321]/80 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4">
