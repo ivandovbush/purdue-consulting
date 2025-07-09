@@ -81,11 +81,12 @@ const Team = () => {
               className="group relative brown-gradient-card rounded-lg overflow-hidden transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               {/* Profile Image */}
-              <div className="w-full h-64 relative overflow-hidden">
+              <div className="w-full h-80 relative overflow-hidden">
                 <img 
                   src={member.image} 
                   alt={member.name}
-                  className="w-full h-full object-cover object-center transition-all duration-300"
+                  className="w-full h-full object-cover object-top transition-all duration-300"
+                  style={{ objectPosition: 'center 20%' }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#654321]/80 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4">

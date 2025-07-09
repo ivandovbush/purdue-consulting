@@ -78,8 +78,12 @@ const Application = () => {
 
             {/* Application Portal */}
             <div className="brown-gradient-card rounded-lg p-8 flex flex-col justify-center items-center text-center space-y-6">
-              <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mb-4">
-                <ExternalLink className="w-8 h-8 text-[#654321]" />
+              <div className="w-24 h-16 flex items-center justify-center mb-4">
+                <img 
+                  src="/lovable-uploads/29e5bbc5-ff2e-4bdd-92ed-a306728b63e6.png" 
+                  alt="Purdue Consulting Club Logo" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               
               <h3 className="font-space-grotesk font-bold text-2xl text-yellow-500">
