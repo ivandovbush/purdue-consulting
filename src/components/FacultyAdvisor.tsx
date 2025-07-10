@@ -23,16 +23,14 @@ const FacultyAdvisor = () => {
               <div className="flex flex-col md:flex-row items-center gap-8">
                 {/* Avatar */}
                 <div className="flex-shrink-0">
-                  <Avatar className="w-32 h-32 border-4 border-yellow-500">
-                    <AvatarImage 
+                  <div className="w-40 h-40 rounded-2xl overflow-hidden border-4 border-yellow-500 shadow-lg">
+                    <img 
                       src="/lovable-uploads/lucky_cho.jpeg" 
-                      alt="Faculty Advisor"
-                      className="object-cover"
+                      alt="Dr. Lucky Cho"
+                      className="w-full h-full object-cover"
+                      style={{ objectPosition: 'center 20%' }}
                     />
-                    <AvatarFallback className="bg-[#654321] text-[#FEF7E5] text-2xl font-bold">
-                      Fa
-                    </AvatarFallback>
-                  </Avatar>
+                  </div>
                 </div>
 
                 {/* Content */}
