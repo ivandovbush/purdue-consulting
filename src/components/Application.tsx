@@ -64,7 +64,7 @@ const Application = () => {
                 </div>
               </div>
 
-              <div className="brown-gradient-card p-6 rounded-lg">
+              <div className="bg-[#654321] p-6 rounded-lg">
                 <h4 className="font-space-grotesk font-semibold text-yellow-500 mb-3">Next Steps</h4>
                 <p className="text-[#FEF7E5] text-sm font-inter mb-4">
                   After submitting your application, you'll receive an email within 1 week 
@@ -77,7 +77,7 @@ const Application = () => {
             </div>
 
             {/* Application Portal */}
-            <div className="brown-gradient-card rounded-lg p-8 flex flex-col justify-center items-center text-center space-y-6">
+            <div className="bg-[#654321] rounded-lg p-8 flex flex-col justify-center items-center text-center space-y-6">
               <div className="w-24 h-16 flex items-center justify-center mb-4">
                 <img 
                   src="/lovable-uploads/29e5bbc5-ff2e-4bdd-92ed-a306728b63e6.png" 

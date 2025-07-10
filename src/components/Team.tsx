@@ -78,42 +78,76 @@ const Team = () => {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="group relative brown-gradient-card rounded-lg overflow-hidden transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="group relative bg-[#FEF7E5] rounded-2xl overflow-hidden transition-all duration-300 shadow-lg hover:shadow-xl border border-[#654321]/10"
             >
-              {/* Profile Image */}
-              <div className="w-full h-80 relative overflow-hidden">
-                <img 
-                  src={member.image} 
-                  alt={member.name}
-                  className="w-full h-full object-cover object-top transition-all duration-300"
-                  style={{ objectPosition: 'center 20%' }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#654321]/80 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 right-4">
-                  <h3 className="font-space-grotesk font-semibold text-lg text-[#FEF7E5]">
+              {/* Front of Card - Professional Layout */}
+              <div className="group-hover:opacity-0 transition-opacity duration-300 p-8">
+                {/* Position Label */}
+                <div className="text-center mb-4">
+                  <span className="text-xs font-inter font-semibold text-[#654321] uppercase tracking-wider bg-yellow-500/20 px-3 py-1 rounded-full">
+                    {member.position}
+                  </span>
+                </div>
+                
+                {/* Professional Headshot */}
+                <div className="w-40 h-40 mx-auto mb-6 relative">
+                  <img 
+                    src={member.image} 
+                    alt={member.name}
+                    className="w-full h-full object-cover rounded-2xl border-2 border-yellow-500/30 shadow-md"
+                    style={{ objectPosition: 'center 20%' }}
+                  />
+                </div>
+
+                {/* Name and Basic Info */}
+                <div className="text-center space-y-2">
+                  <h3 className="font-space-grotesk font-bold text-xl text-[#654321] leading-tight">
                     {member.name}
                   </h3>
-                  <p className="text-yellow-500 text-sm font-inter">{member.position}</p>
+                  <p className="text-yellow-500 font-inter font-semibold text-sm">
+                    {member.major} • {member.year}
+                  </p>
                 </div>
               </div>
 
-              {/* Hover Content */}
-              <div className="absolute inset-0 bg-[#654321]/95 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-center">
-                <h3 className="font-space-grotesk font-semibold text-xl text-yellow-500 mb-2">
-                  {member.name}
-                </h3>
-                <p className="text-[#FEF7E5] text-sm font-inter mb-1">{member.position}</p>
-                <p className="text-[#FEF7E5] text-sm font-inter mb-3">{member.major} • {member.year}</p>
-                <p className="text-[#FEF7E5] text-sm font-inter leading-relaxed mb-4">
-                  {member.bio}
-                </p>
-                <a
-                  href={member.linkedin}
-                  className="inline-flex items-center space-x-2 text-yellow-500 hover:text-[#FEF7E5] transition-colors duration-300"
-                >
-                  <Linkedin className="w-4 h-4" />
-                  <span className="text-sm font-inter">Connect</span>
-                </a>
+              {/* Back of Card - Detailed Bio on Hover */}
+              <div className="absolute inset-0 bg-[#654321] opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-8 flex flex-col justify-center">
+                <div className="text-center space-y-4">
+                  <div className="w-24 h-24 mx-auto mb-4">
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover rounded-full border-2 border-yellow-500"
+                      style={{ objectPosition: 'center 20%' }}
+                    />
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <h3 className="font-space-grotesk font-bold text-xl text-yellow-500">
+                      {member.name}
+                    </h3>
+                    <p className="text-[#FEF7E5] font-inter font-semibold text-sm">
+                      {member.position}
+                    </p>
+                    <p className="text-[#FEF7E5] font-inter text-xs opacity-80">
+                      {member.major} • {member.year}
+                    </p>
+                  </div>
+                  
+                  <div className="w-12 h-px bg-yellow-500/50 mx-auto"></div>
+                  
+                  <p className="text-[#FEF7E5] text-sm font-inter leading-relaxed">
+                    {member.bio}
+                  </p>
+                  
+                  <a
+                    href={member.linkedin}
+                    className="inline-flex items-center space-x-2 text-yellow-500 hover:text-[#FEF7E5] transition-colors duration-300 mt-4"
+                  >
+                    <Linkedin className="w-4 h-4" />
+                    <span className="text-sm font-inter font-medium">Connect</span>
+                  </a>
+                </div>
               </div>
             </div>
           ))}
