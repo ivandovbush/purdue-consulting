@@ -34,7 +34,7 @@ const Application = () => {
                     <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
                     <div>
                       <h4 className="font-inter font-semibold text-yellow-500">Academic Excellence</h4>
-                      <p className="text-[#654321] text-sm">Minimum 3.7 GPA required</p>
+                      <p className="text-[#654321] text-sm">Minimum 3.2 GPA required</p>
                     </div>
                   </div>
                   

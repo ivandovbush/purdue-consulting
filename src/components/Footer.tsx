@@ -9,9 +9,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="font-space-grotesk font-bold text-2xl text-yellow-500 mb-4">PECC</h3>
+            <h3 className="font-space-grotesk font-bold text-2xl text-yellow-500 mb-4">The Purdue Consulting Club</h3>
             <p className="text-[#FEF7E5] font-inter leading-relaxed mb-4">
-              Purdue Elite Consulting Club - Where Strategy Meets Opportunity. 
+              Purdue Consulting Club - Where Strategy Meets Opportunity. 
               Connecting exceptional students with the world's leading consulting firms.
             </p>
             <div className="flex space-x-4">

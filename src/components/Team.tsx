@@ -5,8 +5,8 @@ import { Linkedin } from 'lucide-react';
 const Team = () => {
   const teamMembers = [
     {
-      name: "Sarah Chen",
-      position: "President",
+      name: "Pedro Garcia Faras",
+      position: "Co-Founder",
       major: "Industrial Engineering",
       year: "Senior",
       bio: "Former McKinsey intern with expertise in operations strategy and digital transformation.",
@@ -23,8 +23,8 @@ const Team = () => {
       image: "/lovable-uploads/504d70be-bef1-4524-bcd3-328680f0bc66.png"
     },
     {
-      name: "Emily Watson",
-      position: "Director of Operations",
+      name: "Nikhai Tonwar",
+      position: "Co-Founder",
       major: "Management",
       year: "Senior",
       bio: "Supply chain optimization expert with summer experience at Bain & Company.",
@@ -32,9 +32,9 @@ const Team = () => {
       image: "/lovable-uploads/6b8e7100-ba33-4421-9726-8cdd8be82ee2.png"
     },
     {
-      name: "David Park",
+      name: "Hassan Berbich",
       position: "Director of Recruiting",
-      major: "Data Science",
+      major: "Industrial Engineering",
       year: "Junior",
       bio: "Analytics-driven consultant specializing in market research and business intelligence.",
       linkedin: "#",

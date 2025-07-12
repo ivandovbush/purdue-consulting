@@ -76,7 +76,7 @@ const Admissions = () => {
                   <div className="text-[#FEF7E5] text-sm font-inter">Job Placement Rate</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-space-grotesk font-bold text-yellow-500 mb-2">3.7+</div>
+                  <div className="text-3xl font-space-grotesk font-bold text-yellow-500 mb-2">3.2+</div>
                   <div className="text-[#FEF7E5] text-sm font-inter">Average GPA</div>
                 </div>
                 <div>

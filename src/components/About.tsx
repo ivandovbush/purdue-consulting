@@ -16,7 +16,7 @@ const About = () => {
             </div>
             
             <p className="text-[#654321] text-lg leading-relaxed font-inter">
-              The Purdue Elite Consulting Club stands as the university's most accessible 
+              The Purdue Consulting Club stands as the university's most accessible 
               business organization, dedicated to developing the next generation of strategic 
               thinkers and business leaders.
             </p>
