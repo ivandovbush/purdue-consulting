@@ -45,7 +45,7 @@ const AdvisoryBoard = () => {
           <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-yellow-500">
             Advisory <span className="text-[#654321]">Board</span>
           </h2>
-          <div className="w-20 h-1 bg-yellow-500 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-[#654321] mx-auto mb-6"></div>
           <p className="text-[#654321] text-lg max-w-2xl mx-auto font-inter">
             Distinguished industry leaders and consulting veterans who guide our strategic direction 
             and provide invaluable mentorship to our members.

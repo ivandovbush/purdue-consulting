@@ -8,15 +8,15 @@ const Team = () => {
       name: "Pedro Garcia Faras",
       position: "Co-Founder",
       major: "Industrial Engineering",
-      year: "Senior",
-      bio: "Former McKinsey intern with expertise in operations strategy and digital transformation.",
-      linkedin: "#",
+      year: "Junior",
+      bio: "Former manufacturing engineering intern at Stellantis with expertise in business management, sales, and marketing.",
+      linkedin: "https://www.linkedin.com/in/pgarciaf/",
       image: "/lovable-uploads/507f86fa-3d7a-4fce-9d85-9ca49108655b.png"
     },
     {
-      name: "Marcus Rodriguez",
-      position: "Vice President",
-      major: "Computer Science",
+      name: "Mehdi El Mansar",
+      position: "Co-Founder",
+      major: "Aerospace Engineering",
       year: "Junior", 
       bio: "Technology consulting specialist with experience at Deloitte and passion for fintech innovation.",
       linkedin: "#",
@@ -25,29 +25,20 @@ const Team = () => {
     {
       name: "Nikhai Tonwar",
       position: "Co-Founder",
-      major: "Management",
-      year: "Senior",
-      bio: "Supply chain optimization expert with summer experience at Bain & Company.",
-      linkedin: "#",
+      major: "Industrial Engineering",
+      year: "Junior",
+      bio: "Former Energy Engineering Intern at Trane Technologies with experience in data analysis, marketing, and business logistics.",
+      linkedin: "https://www.linkedin.com/in/nikhai-tonwar-a897a3294/",
       image: "/lovable-uploads/6b8e7100-ba33-4421-9726-8cdd8be82ee2.png"
     },
     {
       name: "Hassan Berbich",
-      position: "Director of Recruiting",
+      position: "Co-Founder",
       major: "Industrial Engineering",
       year: "Junior",
       bio: "Analytics-driven consultant specializing in market research and business intelligence.",
       linkedin: "#",
       image: "/lovable-uploads/f0c899db-a668-412c-80f6-b18377d4e717.png"
-    },
-    {
-      name: "Amanda Foster",
-      position: "Director of External Relations",
-      major: "Economics",
-      year: "Senior",
-      bio: "Corporate strategy consultant with extensive network in Fortune 500 companies.",
-      linkedin: "#",
-      image: "/lovable-uploads/507f86fa-3d7a-4fce-9d85-9ca49108655b.png"
     }
   ];
 
