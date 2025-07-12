@@ -6,6 +6,7 @@ import About from '@/components/About';
 import Services from '@/components/Services';
 import Admissions from '@/components/Admissions';
 import Team from '@/components/Team';
+import AdvisoryBoard from '@/components/AdvisoryBoard';
 import FacultyAdvisor from '@/components/FacultyAdvisor';
 import PurdueAlumni from '@/components/PurdueAlumni';
 import Partners from '@/components/Partners';
@@ -22,6 +23,7 @@ const Index = () => {
         <Services />
         <Admissions />
         <Team />
+        <AdvisoryBoard />
         <FacultyAdvisor />
         <PurdueAlumni />
         <Partners />

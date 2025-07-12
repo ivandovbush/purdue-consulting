@@ -48,15 +48,6 @@ const Team = () => {
       bio: "Corporate strategy consultant with extensive network in Fortune 500 companies.",
       linkedin: "#",
       image: "/lovable-uploads/507f86fa-3d7a-4fce-9d85-9ca49108655b.png"
-    },
-    {
-      name: "James Liu",
-      position: "Director of Professional Development",
-      major: "Finance",
-      year: "Junior",
-      bio: "Investment banking and consulting dual expertise with focus on financial strategy.",
-      linkedin: "#",
-      image: "/lovable-uploads/504d70be-bef1-4524-bcd3-328680f0bc66.png"
     }
   ];
 
@@ -69,28 +60,27 @@ const Team = () => {
           </h2>
           <div className="w-20 h-1 bg-[#654321] mx-auto mb-6"></div>
           <p className="text-[#654321] text-lg max-w-2xl mx-auto font-inter">
-            Meet the exceptional leaders driving innovation and excellence at PECC. 
+            Meet the exceptional leaders driving innovation and excellence at PCC. 
             Our executive board brings diverse expertise and unwavering commitment to success.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Flexible grid that centers items regardless of count */}
+        <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="group relative bg-[#FEF7E5] rounded-2xl overflow-hidden transition-all duration-300 shadow-lg hover:shadow-xl border border-[#654321]/10"
+              className="group relative bg-[#FEF7E5] rounded-2xl overflow-hidden transition-all duration-300 shadow-lg hover:shadow-xl border border-[#654321]/10 w-full sm:w-80 lg:w-72 xl:w-80"
             >
-              {/* Front of Card - Professional Layout */}
+              {/* Front of Card */}
               <div className="group-hover:opacity-0 transition-opacity duration-300 p-8">
-                {/* Position Label */}
                 <div className="text-center mb-4">
                   <span className="text-xs font-inter font-semibold text-[#654321] uppercase tracking-wider bg-yellow-500/20 px-3 py-1 rounded-full">
                     {member.position}
                   </span>
                 </div>
                 
-                {/* Professional Headshot */}
-                <div className="w-40 h-40 mx-auto mb-6 relative">
+                <div className="w-48 h-48 mx-auto mb-6 relative">
                   <img 
                     src={member.image} 
                     alt={member.name}
@@ -99,7 +89,6 @@ const Team = () => {
                   />
                 </div>
 
-                {/* Name and Basic Info */}
                 <div className="text-center space-y-2">
                   <h3 className="font-space-grotesk font-bold text-xl text-[#654321] leading-tight">
                     {member.name}
@@ -110,7 +99,7 @@ const Team = () => {
                 </div>
               </div>
 
-              {/* Back of Card - Detailed Bio on Hover */}
+              {/* Back of Card */}
               <div className="absolute inset-0 bg-[#654321] opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-8 flex flex-col justify-center">
                 <div className="text-center space-y-4">
                   <div className="w-24 h-24 mx-auto mb-4">
