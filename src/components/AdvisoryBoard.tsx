@@ -39,14 +39,14 @@ const AdvisoryBoard = () => {
   ];
 
   return (
-    <section id="advisory-board" className="py-20 bg-[#654321]">
+    <section id="advisory-board" className="py-20 bg-[#FEF7E5]">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-yellow-500">
-            Advisory <span className="text-[#FEF7E5]">Board</span>
+            Advisory <span className="text-[#654321]">Board</span>
           </h2>
           <div className="w-20 h-1 bg-yellow-500 mx-auto mb-6"></div>
-          <p className="text-[#FEF7E5] text-lg max-w-2xl mx-auto font-inter">
+          <p className="text-[#654321] text-lg max-w-2xl mx-auto font-inter">
             Distinguished industry leaders and consulting veterans who guide our strategic direction 
             and provide invaluable mentorship to our members.
           </p>
@@ -57,12 +57,12 @@ const AdvisoryBoard = () => {
           {advisoryMembers.map((member, index) => (
             <div
               key={index}
-              className="group relative bg-[#654321] rounded-2xl overflow-hidden transition-all duration-300 shadow-lg hover:shadow-xl border border-yellow-500/20 w-full sm:w-80 lg:w-72 xl:w-80"
+              className="group relative bg-[#FEF7E5] rounded-2xl overflow-hidden transition-all duration-300 shadow-lg hover:shadow-xl border border-[#654321]/20 w-full sm:w-80 lg:w-72 xl:w-80"
             >
               {/* Front of Card */}
               <div className="group-hover:opacity-0 transition-opacity duration-300 p-8">
                 <div className="text-center mb-4">
-                  <span className="text-xs font-inter font-semibold text-yellow-500 uppercase tracking-wider bg-[#FEF7E5]/20 px-3 py-1 rounded-full">
+                  <span className="text-xs font-inter font-semibold text-yellow-500 uppercase tracking-wider bg-[#654321]/20 px-3 py-1 rounded-full">
                     {member.position}
                   </span>
                 </div>
@@ -71,13 +71,13 @@ const AdvisoryBoard = () => {
                   <img 
                     src={member.image} 
                     alt={member.name}
-                    className="w-full h-full object-cover rounded-2xl border-2 border-[#FEF7E5]/30 shadow-md"
+                    className="w-full h-full object-cover rounded-2xl border-2 border-[#654321]/30 shadow-md"
                     style={{ objectPosition: 'center 20%' }}
                   />
                 </div>
 
                 <div className="text-center space-y-2">
-                  <h3 className="font-space-grotesk font-bold text-xl text-[#FEF7E5] leading-tight">
+                  <h3 className="font-space-grotesk font-bold text-xl text-[#654321] leading-tight">
                     {member.name}
                   </h3>
                   <p className="text-yellow-500 font-inter font-semibold text-sm">
@@ -87,38 +87,38 @@ const AdvisoryBoard = () => {
               </div>
 
               {/* Back of Card */}
-              <div className="absolute inset-0 bg-[#FEF7E5] opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-8 flex flex-col justify-center">
+              <div className="absolute inset-0 bg-[#654321] opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-8 flex flex-col justify-center">
                 <div className="text-center space-y-4">
                   <div className="w-24 h-24 mx-auto mb-4">
                     <img 
                       src={member.image} 
                       alt={member.name}
-                      className="w-full h-full object-cover rounded-full border-2 border-[#654321]"
+                      className="w-full h-full object-cover rounded-full border-2 border-[#FEF7E5]"
                       style={{ objectPosition: 'center 20%' }}
                     />
                   </div>
                   
                   <div className="space-y-2">
-                    <h3 className="font-space-grotesk font-bold text-xl text-[#654321]">
+                    <h3 className="font-space-grotesk font-bold text-xl text-[#FEF7E5]">
                       {member.name}
                     </h3>
                     <p className="text-yellow-500 font-inter font-semibold text-sm">
                       {member.position}
                     </p>
-                    <p className="text-[#654321] font-inter text-xs opacity-80">
+                    <p className="text-[#FEF7E5] font-inter text-xs opacity-80">
                       {member.company}
                     </p>
                   </div>
                   
-                  <div className="w-12 h-px bg-[#654321]/50 mx-auto"></div>
+                  <div className="w-12 h-px bg-[#FEF7E5]/50 mx-auto"></div>
                   
-                  <p className="text-[#654321] text-sm font-inter leading-relaxed">
+                  <p className="text-[#FEF7E5] text-sm font-inter leading-relaxed">
                     {member.bio}
                   </p>
                   
                   <a
                     href={member.linkedin}
-                    className="inline-flex items-center space-x-2 text-[#654321] hover:text-yellow-500 transition-colors duration-300 mt-4"
+                    className="inline-flex items-center space-x-2 text-[#FEF7E5] hover:text-yellow-500 transition-colors duration-300 mt-4"
                   >
                     <Linkedin className="w-4 h-4" />
                     <span className="text-sm font-inter font-medium">Connect</span>
