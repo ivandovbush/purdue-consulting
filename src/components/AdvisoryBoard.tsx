@@ -57,12 +57,12 @@ const AdvisoryBoard = () => {
           {advisoryMembers.map((member, index) => (
             <div
               key={index}
-              className="group relative bg-[#FEF7E5] rounded-2xl overflow-hidden transition-all duration-300 shadow-lg hover:shadow-xl border border-[#654321]/20 w-full sm:w-80 lg:w-72 xl:w-80"
+              className="group relative bg-[#FEF7E5] rounded-2xl overflow-hidden transition-all duration-300 shadow-lg hover:shadow-xl border border-[#654321]/10 w-full sm:w-80 lg:w-72 xl:w-80"
             >
               {/* Front of Card */}
               <div className="group-hover:opacity-0 transition-opacity duration-300 p-8">
                 <div className="text-center mb-4">
-                  <span className="text-xs font-inter font-semibold text-yellow-500 uppercase tracking-wider bg-[#654321]/20 px-3 py-1 rounded-full">
+                  <span className="text-xs font-inter font-semibold text-[#654321] uppercase tracking-wider bg-yellow-500/20 px-3 py-1 rounded-full">
                     {member.position}
                   </span>
                 </div>
@@ -71,7 +71,7 @@ const AdvisoryBoard = () => {
                   <img 
                     src={member.image} 
                     alt={member.name}
-                    className="w-full h-full object-cover rounded-2xl border-2 border-[#654321]/30 shadow-md"
+                    className="w-full h-full object-cover rounded-2xl border-2 border-yellow-500/30 shadow-md"
                     style={{ objectPosition: 'center 20%' }}
                   />
                 </div>
@@ -93,16 +93,16 @@ const AdvisoryBoard = () => {
                     <img 
                       src={member.image} 
                       alt={member.name}
-                      className="w-full h-full object-cover rounded-full border-2 border-[#FEF7E5]"
+                      className="w-full h-full object-cover rounded-full border-2 border-yellow-500"
                       style={{ objectPosition: 'center 20%' }}
                     />
                   </div>
                   
                   <div className="space-y-2">
-                    <h3 className="font-space-grotesk font-bold text-xl text-[#FEF7E5]">
+                    <h3 className="font-space-grotesk font-bold text-xl text-yellow-500">
                       {member.name}
                     </h3>
-                    <p className="text-yellow-500 font-inter font-semibold text-sm">
+                    <p className="text-[#FEF7E5] font-inter font-semibold text-sm">
                       {member.position}
                     </p>
                     <p className="text-[#FEF7E5] font-inter text-xs opacity-80">
@@ -110,7 +110,7 @@ const AdvisoryBoard = () => {
                     </p>
                   </div>
                   
-                  <div className="w-12 h-px bg-[#FEF7E5]/50 mx-auto"></div>
+                  <div className="w-12 h-px bg-yellow-500/50 mx-auto"></div>
                   
                   <p className="text-[#FEF7E5] text-sm font-inter leading-relaxed">
                     {member.bio}
@@ -118,7 +118,7 @@ const AdvisoryBoard = () => {
                   
                   <a
                     href={member.linkedin}
-                    className="inline-flex items-center space-x-2 text-[#FEF7E5] hover:text-yellow-500 transition-colors duration-300 mt-4"
+                    className="inline-flex items-center space-x-2 text-yellow-500 hover:text-[#FEF7E5] transition-colors duration-300 mt-4"
                   >
                     <Linkedin className="w-4 h-4" />
                     <span className="text-sm font-inter font-medium">Connect</span>
