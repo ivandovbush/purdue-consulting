@@ -18,8 +18,8 @@ const Team = () => {
       position: "Co-Founder",
       major: "Aerospace Engineering",
       year: "Junior", 
-      bio: "Technology consulting specialist with experience at Deloitte and passion for fintech innovation.",
-      linkedin: "#",
+      bio: "Aerospace engineering student with award-winning design experience and passion for mission-driven, sustainable innovation.",
+      linkedin: "https://www.linkedin.com/in/mehdi-el-mansar/",
       image: "/lovable-uploads/504d70be-bef1-4524-bcd3-328680f0bc66.png"
     },
     {
@@ -36,8 +36,8 @@ const Team = () => {
       position: "Co-Founder",
       major: "Industrial Engineering",
       year: "Junior",
-      bio: "Analytics-driven consultant specializing in market research and business intelligence.",
-      linkedin: "#",
+      bio: "Industrial engineering intern at Aramco with experience in research, teaching, and global supply chain innovation.",
+      linkedin: "https://www.linkedin.com/in/hassan-berbich/",
       image: "/lovable-uploads/f0c899db-a668-412c-80f6-b18377d4e717.png"
     }
   ];
@@ -51,7 +51,7 @@ const Team = () => {
           </h2>
           <div className="w-20 h-1 bg-[#654321] mx-auto mb-6"></div>
           <p className="text-[#654321] text-lg max-w-2xl mx-auto font-inter">
-            Meet the exceptional leaders driving innovation and excellence at PCC. 
+            Meet the exceptional leaders driving innovation and excellence at The Purdue Consulting Club. 
             Our executive board brings diverse expertise and unwavering commitment to success.
           </p>
         </div>

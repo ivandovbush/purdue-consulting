@@ -4,36 +4,16 @@ import React from 'react';
 const Partners = () => {
   const partners = [
     {
-      name: "McKinsey & Company",
-      logo: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+      name: "Purdue Anvil",
+      logo: "/lovable-uploads/purdue-anvil.png"
     },
     {
-      name: "Boston Consulting Group",
-      logo: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+      name: "Zyth",
+      logo: "/lovable-uploads/zyth_logo.jpeg"
     },
     {
-      name: "Bain & Company",
-      logo: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
-    },
-    {
-      name: "Deloitte Consulting",
-      logo: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
-    },
-    {
-      name: "PwC Strategy&",
-      logo: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
-    },
-    {
-      name: "Accenture Strategy",
-      logo: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
-    },
-    {
-      name: "Oliver Wyman",
-      logo: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
-    },
-    {
-      name: "EY-Parthenon",
-      logo: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+      name: "Purdue Innovates",
+      logo: "/lovable-uploads/purdue_innovates_logo.jpeg"
     }
   ];
 

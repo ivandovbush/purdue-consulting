@@ -23,9 +23,9 @@ const Index = () => {
         <Services />
         <Admissions />
         <Team />
-        <AdvisoryBoard />
         <FacultyAdvisor />
-        <PurdueAlumni />
+        <AdvisoryBoard />
+        {/* <PurdueAlumni /> */}
         <Partners />
         <Application />
       </main>
