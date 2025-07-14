@@ -10,6 +10,12 @@ const Hero = () => {
       applicationSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
+  const scrollToServices = () => {
+    const aboutSection = document.getElementById('services');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#FEF7E5]">
@@ -40,7 +46,7 @@ const Hero = () => {
             >
               Join Our Elite Network
             </Button>
-            <Button variant="outline" size="sm" className="border-[#654321] text-[#654321] hover:bg-[#654321] hover:text-[#FEF7E5] font-semibold rounded-md transition-all duration-300 w-full sm:w-auto">
+            <Button onClick={scrollToServices} variant="outline" size="sm" className="border-[#654321] text-[#654321] hover:bg-[#654321] hover:text-[#FEF7E5] font-semibold rounded-md transition-all duration-300 w-full sm:w-auto">
               Learn More
             </Button>
           </div>

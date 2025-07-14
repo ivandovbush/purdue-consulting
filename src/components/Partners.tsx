@@ -30,20 +30,20 @@ const Partners = () => {
             to provide our members with unparalleled opportunities.
           </p>
         </div>
-
+        {/* grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 */}
+        {/* grid grid-cols-2 md:grid-cols-4 gap-8 mb-12 */}
         {/* Partners Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+        <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
           {partners.map((partner, index) => (
             <div
               key={index}
-              className="group bg-[#654321] rounded-lg p-6 hover:transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="group bg-[#654321] rounded-lg p-6 hover:transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl w-48"
             >
               <div className="text-center">
                 <div className="w-16 h-16 bg-[#FEF7E5] rounded-lg flex items-center justify-center mx-auto mb-4 transition-all duration-300 overflow-hidden">
                   <img 
                     src={partner.logo} 
                     alt={partner.name}
-                    className="w-12 h-12 object-cover rounded grayscale group-hover:grayscale-0 transition-all duration-300"
                   />
                 </div>
                 <h3 className="font-inter font-medium text-[#FEF7E5] text-sm group-hover:text-yellow-500 transition-colors duration-300">

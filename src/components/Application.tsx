@@ -5,7 +5,7 @@ import { ExternalLink, CheckCircle, Clock, Users, Trophy } from 'lucide-react';
 
 const Application = () => {
   const handleApplicationClick = () => {
-    window.open('https://google.com', '_blank');
+    window.open('https://forms.cloud.microsoft/r/JCFPANQ1wu', '_blank');
   };
 
   return (

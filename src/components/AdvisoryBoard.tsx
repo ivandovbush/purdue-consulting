@@ -5,36 +5,28 @@ import { Linkedin } from 'lucide-react';
 const AdvisoryBoard = () => {
   const advisoryMembers = [
     {
-      name: "Dr. Sarah Johnson",
-      position: "Senior Partner",
-      company: "McKinsey & Company",
-      bio: "Former McKinsey Senior Partner with 15+ years of experience in strategic consulting across Fortune 500 companies.",
-      linkedin: "#",
-      image: "/lovable-uploads/507f86fa-3d7a-4fce-9d85-9ca49108655b.png"
+      name: "Mike Iem",
+      position: "Owner/President",
+      company: "The Ziem Group Inc",
+      bio: "Driving strategic growth, overseeing operations, and building strong client partnerships across industries.",
+      linkedin: "https://www.linkedin.com/in/mikeiem/",
+      image: "/lovable-uploads/mike_iem.jpeg"
     },
     {
-      name: "Michael Chen",
-      position: "Managing Director",
-      company: "Boston Consulting Group",
-      bio: "BCG Managing Director specializing in digital transformation and technology strategy for global enterprises.",
-      linkedin: "#",
-      image: "/lovable-uploads/504d70be-bef1-4524-bcd3-328680f0bc66.png"
+      name: "Tim Zhou",
+      position: "Data Storage Sales",
+      company: "IBM",
+      bio: "IBM executive spearheading digital innovation and enterprise transformation initiatives.",
+      linkedin: "https://www.linkedin.com/in/junshengzhou/",
+      image: "/lovable-uploads/tim_zhou.jpeg"
     },
     {
-      name: "Jennifer Williams",
-      position: "Principal",
-      company: "Bain & Company",
-      bio: "Bain Principal with expertise in private equity, operations improvement, and organizational transformation.",
-      linkedin: "#",
-      image: "/lovable-uploads/6b8e7100-ba33-4421-9726-8cdd8be82ee2.png"
-    },
-    {
-      name: "Robert Martinez",
-      position: "Director",
-      company: "Deloitte Consulting",
-      bio: "Deloitte Director focusing on industry 4.0, supply chain optimization, and business process reengineering.",
-      linkedin: "#",
-      image: "/lovable-uploads/f0c899db-a668-412c-80f6-b18377d4e717.png"
+      name: "Lara Lubinsky",
+      position: "Supply Chain Analyst",
+      company: "Medline Industries",
+      bio: "Supply chain analyst at Medline Industries optimizing logistics and inventory management for efficiency.",
+      linkedin: "https://www.linkedin.com/in/lara-lubinsky-71827922a/",
+      image: "/lovable-uploads/lara_lubinsky.jpeg"
     }
   ];
 
