@@ -18,35 +18,35 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#FEF7E5]">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
       {/* Geometric Background */}
       <div className="geometric-bg">
-        <div className="geometric-shape w-32 h-32 border-2 border-[#654321]/20 rotate-45"></div>
-        <div className="geometric-shape w-24 h-24 bg-[#654321]/10 rounded-full"></div>
-        <div className="geometric-shape w-20 h-20 border border-yellow-500/10 transform rotate-12"></div>
+        <div className="geometric-shape w-32 h-32 border-2 border-primary/20 rotate-45"></div>
+        <div className="geometric-shape w-24 h-24 bg-primary/10 rounded-full"></div>
+        <div className="geometric-shape w-20 h-20 border border-accent/10 transform rotate-12"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <div className="animate-fade-in">
-          <h1 className="font-space-grotesk font-bold text-5xl md:text-7xl mb-6 leading-tight">
+          <h1 className="font-space-grotesk font-bold text-5xl md:text-7xl mb-6 leading-tight text-foreground">
             Where Strategy
-            <span className="block text-yellow-500">Meets Opportunity</span>
+            <span className="block text-accent">Meets Opportunity</span>
           </h1>
           
-          <p className="text-[#654321] text-lg md:text-xl mb-8 max-w-2xl mx-auto font-inter">
-            Purdue University's premier consulting club connecting elite students with 
-            startups, consulting firms, and business leaders across the nation.
+          <p className="text-muted-foreground text-lg md:text-xl mb-8 max-w-2xl mx-auto font-inter">
+            Purdue University's premier venture consulting club connecting elite students with 
+            startups, venture capital firms, and innovation leaders across the nation.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               onClick={scrollToApplication}
-              className="bg-[#654321] hover:bg-[#5a3b1e] text-[#FEF7E5] font-semibold px-6 sm:px-8 py-3 rounded-md transition-all duration-300 text-base sm:text-lg w-full sm:w-auto"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 sm:px-8 py-3 rounded-md transition-all duration-300 text-base sm:text-lg w-full sm:w-auto"
             >
               Join Our Elite Network
             </Button>
-            <Button onClick={scrollToServices} variant="outline" size="sm" className="border-[#654321] text-[#654321] hover:bg-[#654321] hover:text-[#FEF7E5] font-semibold rounded-md transition-all duration-300 w-full sm:w-auto">
+            <Button onClick={scrollToServices} variant="outline" size="sm" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground font-semibold rounded-md transition-all duration-300 w-full sm:w-auto">
               Learn More
             </Button>
           </div>
@@ -55,7 +55,7 @@ const Hero = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ChevronDown className="w-6 h-6 text-[#654321]" />
+        <ChevronDown className="w-6 h-6 text-primary" />
       </div>
     </section>
   );

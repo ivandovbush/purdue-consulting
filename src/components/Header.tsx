@@ -31,7 +31,7 @@ const Header = () => {
             {/* Logo - visible on all screens */}
             <img 
               src="/lovable-uploads/f28538bd-e34d-450c-8191-7745c95ca5f4.png" 
-              alt="Purdue Consulting Club Logo" 
+              alt="Purdue Venture Consulting Logo" 
               className="w-8 h-8 object-contain"
             />
             {/* Text - hidden on mobile, visible on desktop */}
@@ -57,7 +57,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Button 
               onClick={scrollToApplication}
-              className="bg-[#654321] hover:bg-[#5a3b1e] text-[#FEF7E5] font-semibold px-6 py-2 rounded-md transition-all duration-300"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 py-2 rounded-md transition-all duration-300"
             >
               Apply Now
             </Button>
@@ -65,7 +65,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-[#654321]"
+            className="md:hidden text-primary"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -76,13 +76,13 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 py-4 border-t border-[#654321]/30">
+          <div className="md:hidden mt-4 py-4 border-t border-primary/30">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-[#654321] hover:text-yellow-500 transition-colors duration-300 font-inter font-medium"
+                  className="text-foreground hover:text-accent transition-colors duration-300 font-inter font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
@@ -93,7 +93,7 @@ const Header = () => {
                   scrollToApplication();
                   setIsMenuOpen(false);
                 }}
-                className="bg-[#654321] hover:bg-[#5a3b1e] text-[#FEF7E5] font-semibold px-6 py-2 rounded-md transition-all duration-300 w-fit"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 py-2 rounded-md transition-all duration-300 w-fit"
               >
                 Apply Now
               </Button>

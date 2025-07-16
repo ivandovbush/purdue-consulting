@@ -29,56 +29,56 @@ const About = () => {
 
             <div className="flex items-center space-x-8 pt-6">
               <div className="text-center">
-                <div className="text-3xl font-space-grotesk font-bold text-yellow-500">50+</div>
-                <div className="text-yellow-500 text-sm">Active Members</div>
+                <div className="text-3xl font-space-grotesk font-bold text-accent">50+</div>
+                <div className="text-accent text-sm">Active Members</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-space-grotesk font-bold text-yellow-500">25+</div>
-                <div className="text-yellow-500 text-sm">Partner Companies</div>
+                <div className="text-3xl font-space-grotesk font-bold text-accent">25+</div>
+                <div className="text-accent text-sm">Partner Companies</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-space-grotesk font-bold text-yellow-500">95%</div>
-                <div className="text-yellow-500 text-sm">Job Placement Rate</div>
+                <div className="text-3xl font-space-grotesk font-bold text-accent">95%</div>
+                <div className="text-accent text-sm">Job Placement Rate</div>
               </div>
             </div>
           </div>
 
           {/* Right Column - Visual Element */}
           <div className="relative">
-            <div className="bg-[#654321] p-8 rounded-lg shadow-lg">
+            <div className="bg-secondary p-8 rounded-lg shadow-lg border border-primary/20">
               <div className="space-y-4">
-                <h3 className="font-space-grotesk font-semibold text-xl text-yellow-500">Our Values</h3>
+                <h3 className="font-space-grotesk font-semibold text-xl text-primary">Our Values</h3>
                 
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-inter font-semibold text-[#FEF7E5]">Excellence</h4>
-                      <p className="text-[#FEF7E5] text-sm">Pursuing the highest standards in everything we do</p>
+                      <h4 className="font-inter font-semibold text-foreground">Excellence</h4>
+                      <p className="text-muted-foreground text-sm">Pursuing the highest standards in everything we do</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-inter font-semibold text-[#FEF7E5]">Accessibility</h4>
-                      <p className="text-[#FEF7E5] text-sm">Welcoming all students eager to grow through hands-on experience</p>
+                      <h4 className="font-inter font-semibold text-foreground">Accessibility</h4>
+                      <p className="text-muted-foreground text-sm">Welcoming all students eager to grow through hands-on experience</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-inter font-semibold text-[#FEF7E5]">Growth</h4>
-                      <p className="text-[#FEF7E5] text-sm">Equipping members with the tools to succeed in consulting and beyond</p>
+                      <h4 className="font-inter font-semibold text-foreground">Growth</h4>
+                      <p className="text-muted-foreground text-sm">Equipping members with the tools to succeed in consulting and beyond</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h4 className="font-inter font-semibold text-[#FEF7E5]">Impact</h4>
-                      <p className="text-[#FEF7E5] text-sm">Creating meaningful change for our clients and community</p>
+                      <h4 className="font-inter font-semibold text-foreground">Impact</h4>
+                      <p className="text-muted-foreground text-sm">Creating meaningful change for our clients and community</p>
                     </div>
                   </div>
                 </div>
