@@ -4,18 +4,18 @@ import { Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#654321] border-t border-[#FEF7E5]/20 py-12">
+    <footer className="bg-card border-t border-border py-12">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="font-space-grotesk font-bold text-2xl text-yellow-500 mb-4">The Purdue Consulting Club</h3>
-            <p className="text-[#FEF7E5] font-inter leading-relaxed mb-4">
-              Purdue Consulting Club - Where Strategy Meets Opportunity. 
-              Connecting exceptional students with the world's leading consulting firms.
+            <h3 className="font-space-grotesk font-bold text-2xl text-primary mb-4">Purdue Venture Consulting</h3>
+            <p className="text-foreground font-inter leading-relaxed mb-4">
+              Purdue Venture Consulting - Where Innovation Meets Opportunity. 
+              Connecting exceptional students with the world's leading venture capital firms and startups.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-[#FEF7E5] hover:text-yellow-500 transition-colors duration-300">
+              <a href="#" className="text-foreground hover:text-primary transition-colors duration-300">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
@@ -23,20 +23,20 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-space-grotesk font-semibold text-yellow-500 mb-4">Quick Links</h4>
+            <h4 className="font-space-grotesk font-semibold text-primary mb-4">Quick Links</h4>
             <div className="space-y-2">
-              <a href="#about" className="block text-[#FEF7E5] hover:text-yellow-500 transition-colors duration-300 font-inter">About</a>
-              <a href="#services" className="block text-[#FEF7E5] hover:text-yellow-500 transition-colors duration-300 font-inter">What We Do</a>
-              <a href="#admissions" className="block text-[#FEF7E5] hover:text-yellow-500 transition-colors duration-300 font-inter">Admissions</a>
-              <a href="#team" className="block text-[#FEF7E5] hover:text-yellow-500 transition-colors duration-300 font-inter">Team</a>
-              <a href="#partners" className="block text-[#FEF7E5] hover:text-yellow-500 transition-colors duration-300 font-inter">Partners</a>
+              <a href="#about" className="block text-foreground hover:text-primary transition-colors duration-300 font-inter">About</a>
+              <a href="#services" className="block text-foreground hover:text-primary transition-colors duration-300 font-inter">What We Do</a>
+              <a href="#admissions" className="block text-foreground hover:text-primary transition-colors duration-300 font-inter">Admissions</a>
+              <a href="#team" className="block text-foreground hover:text-primary transition-colors duration-300 font-inter">Team</a>
+              <a href="#partners" className="block text-foreground hover:text-primary transition-colors duration-300 font-inter">Partners</a>
             </div>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="font-space-grotesk font-semibold text-yellow-500 mb-4">Contact</h4>
-            <div className="space-y-2 text-[#FEF7E5] font-inter">
+            <h4 className="font-space-grotesk font-semibold text-primary mb-4">Contact</h4>
+            <div className="space-y-2 text-foreground font-inter">
               <p>Purdue University</p>
               <p>West Lafayette, IN 47907</p>
               <p>pecc@purdue.edu</p>
@@ -45,13 +45,13 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-[#FEF7E5]/20 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-[#FEF7E5] text-sm font-inter">
-            © 2024 Purdue Elite Consulting Club. All rights reserved.
+        <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-foreground text-sm font-inter">
+            © 2024 Purdue Venture Consulting. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-[#FEF7E5] hover:text-yellow-500 transition-colors duration-300 text-sm font-inter">Privacy Policy</a>
-            <a href="#" className="text-[#FEF7E5] hover:text-yellow-500 transition-colors duration-300 text-sm font-inter">Terms of Service</a>
+            <a href="#" className="text-foreground hover:text-primary transition-colors duration-300 text-sm font-inter">Privacy Policy</a>
+            <a href="#" className="text-foreground hover:text-primary transition-colors duration-300 text-sm font-inter">Terms of Service</a>
           </div>
         </div>
       </div>

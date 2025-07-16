@@ -31,14 +31,14 @@ const AdvisoryBoard = () => {
   ];
 
   return (
-    <section id="advisory-board" className="py-20 bg-[#FEF7E5]">
+    <section id="advisory-board" className="py-20 bg-card">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-yellow-500">
-            Advisory <span className="text-[#654321]">Board</span>
+          <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-primary">
+            Advisory <span className="text-accent">Board</span>
           </h2>
-          <div className="w-20 h-1 bg-[#654321] mx-auto mb-6"></div>
-          <p className="text-[#654321] text-lg max-w-2xl mx-auto font-inter">
+          <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
+          <p className="text-foreground text-lg max-w-2xl mx-auto font-inter">
             Distinguished industry leaders and consulting veterans who guide our strategic direction 
             and provide invaluable mentorship to our members.
           </p>
@@ -49,12 +49,12 @@ const AdvisoryBoard = () => {
           {advisoryMembers.map((member, index) => (
             <div
               key={index}
-              className="group relative bg-[#FEF7E5] rounded-2xl overflow-hidden transition-all duration-300 shadow-lg hover:shadow-xl border border-[#654321]/10 w-full sm:w-80 lg:w-72 xl:w-80"
+              className="group relative bg-card rounded-2xl overflow-hidden transition-all duration-300 shadow-lg hover:shadow-xl border border-border w-full sm:w-80 lg:w-72 xl:w-80"
             >
               {/* Front of Card */}
               <div className="group-hover:opacity-0 transition-opacity duration-300 p-8">
                 <div className="text-center mb-4">
-                  <span className="text-xs font-inter font-semibold text-[#654321] uppercase tracking-wider bg-yellow-500/20 px-3 py-1 rounded-full">
+                  <span className="text-xs font-inter font-semibold text-primary uppercase tracking-wider bg-primary/20 px-3 py-1 rounded-full">
                     {member.position}
                   </span>
                 </div>
@@ -63,54 +63,54 @@ const AdvisoryBoard = () => {
                   <img 
                     src={member.image} 
                     alt={member.name}
-                    className="w-full h-full object-cover rounded-2xl border-2 border-yellow-500/30 shadow-md"
+                    className="w-full h-full object-cover rounded-2xl border-2 border-primary/30 shadow-md"
                     style={{ objectPosition: 'center 20%' }}
                   />
                 </div>
 
                 <div className="text-center space-y-2">
-                  <h3 className="font-space-grotesk font-bold text-xl text-[#654321] leading-tight">
+                  <h3 className="font-space-grotesk font-bold text-xl text-foreground leading-tight">
                     {member.name}
                   </h3>
-                  <p className="text-yellow-500 font-inter font-semibold text-sm">
+                  <p className="text-primary font-inter font-semibold text-sm">
                     {member.company}
                   </p>
                 </div>
               </div>
 
               {/* Back of Card */}
-              <div className="absolute inset-0 bg-[#654321] opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-8 flex flex-col justify-center">
+              <div className="absolute inset-0 gradient-card opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-8 flex flex-col justify-center">
                 <div className="text-center space-y-4">
                   <div className="w-24 h-24 mx-auto mb-4">
                     <img 
                       src={member.image} 
                       alt={member.name}
-                      className="w-full h-full object-cover rounded-full border-2 border-yellow-500"
+                      className="w-full h-full object-cover rounded-full border-2 border-accent"
                       style={{ objectPosition: 'center 20%' }}
                     />
                   </div>
                   
                   <div className="space-y-2">
-                    <h3 className="font-space-grotesk font-bold text-xl text-yellow-500">
+                    <h3 className="font-space-grotesk font-bold text-xl text-white">
                       {member.name}
                     </h3>
-                    <p className="text-[#FEF7E5] font-inter font-semibold text-sm">
+                    <p className="text-white font-inter font-semibold text-sm">
                       {member.position}
                     </p>
-                    <p className="text-[#FEF7E5] font-inter text-xs opacity-80">
+                    <p className="text-white font-inter text-xs opacity-80">
                       {member.company}
                     </p>
                   </div>
                   
-                  <div className="w-12 h-px bg-yellow-500/50 mx-auto"></div>
+                  <div className="w-12 h-px bg-white/50 mx-auto"></div>
                   
-                  <p className="text-[#FEF7E5] text-sm font-inter leading-relaxed">
+                  <p className="text-white text-sm font-inter leading-relaxed">
                     {member.bio}
                   </p>
                   
                   <a
                     href={member.linkedin}
-                    className="inline-flex items-center space-x-2 text-yellow-500 hover:text-[#FEF7E5] transition-colors duration-300 mt-4"
+                    className="inline-flex items-center space-x-2 text-white hover:text-accent transition-colors duration-300 mt-4"
                   >
                     <Linkedin className="w-4 h-4" />
                     <span className="text-sm font-inter font-medium">Connect</span>

@@ -23,7 +23,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#FEF7E5]/90 backdrop-blur-md border-b border-[#654321]/30">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-primary/30">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo and Brand */}
@@ -35,8 +35,8 @@ const Header = () => {
               className="w-8 h-8 object-contain"
             />
             {/* Text - hidden on mobile, visible on desktop */}
-            <div className="hidden md:block font-space-grotesk font-bold text-xl text-[#654321]">
-              The Purdue Consulting Club
+            <div className="hidden md:block font-space-grotesk font-bold text-xl text-foreground">
+              Purdue Venture Consulting
             </div>
           </div>
 
@@ -46,7 +46,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-[#654321] hover:text-yellow-500 transition-colors duration-300 font-inter font-medium"
+                className="text-foreground hover:text-primary transition-colors duration-300 font-inter font-medium"
               >
                 {item.name}
               </a>

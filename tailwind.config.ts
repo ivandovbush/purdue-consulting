@@ -63,16 +63,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Updated colors with mocha brown and consistent cream shades
-				'light-cream': '#F9F6F1',
-				'dark-cream': '#F2EDE6',
-				'mocha-brown': '#654321',
-				'warm-brown': 'hsl(35 65% 45%)',
-				'warm-tan': 'hsl(42 55% 65%)',
-				'light-tan': 'hsl(45 40% 80%)',
-				'cream': 'hsl(48 30% 94%)',
-				'mid-brown': 'hsl(35 50% 60%)',
-				'gold-hint': 'hsl(45 70% 75%)',
+				// Modern tech colors
+				'dark-bg': 'hsl(210 15% 8%)',
+				'dark-card': 'hsl(210 15% 12%)',
+				'tech-purple': 'hsl(260 85% 65%)',
+				'tech-pink': 'hsl(290 85% 70%)',
+				'tech-blue': 'hsl(200 85% 60%)',
+				'tech-accent': 'hsl(320 85% 65%)',
 			},
 			fontFamily: {
 				'space-grotesk': ['Space Grotesk', 'sans-serif'],

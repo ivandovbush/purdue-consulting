@@ -3,28 +3,28 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-[#FEF7E5]">
+    <section id="about" className="py-20 bg-card">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text */}
           <div className="space-y-6">
             <div>
-              <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-yellow-500">
-                About <span className="text-[#654321]">The Purdue Consulting Club</span>
+              <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-primary">
+                About <span className="text-accent">Purdue Venture Consulting</span>
               </h2>
-              <div className="w-20 h-1 bg-[#654321] mb-6"></div>
+              <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
             </div>
             
-            <p className="text-[#654321] text-lg leading-relaxed font-inter">
-              The Purdue Consulting Club stands as the university's most accessible 
+            <p className="text-foreground text-lg leading-relaxed font-inter">
+              Purdue Venture Consulting stands as the university's premier innovation-driven 
               business organization, dedicated to developing the next generation of strategic 
-              thinkers and business leaders.
+              thinkers and venture builders.
             </p>
             
-            <p className="text-[#654321] text-lg leading-relaxed font-inter">
+            <p className="text-foreground text-lg leading-relaxed font-inter">
               Our mission is to bridge the gap between academic excellence and real-world 
-              business impact. We provide our members with unparalleled access to consulting 
-              opportunities, executive mentorship, and a network that extends far beyond campus.
+              venture creation. We provide our members with unparalleled access to startup consulting 
+              opportunities, venture capital mentorship, and a network that extends far beyond campus.
             </p>
 
             <div className="flex items-center space-x-8 pt-6">
