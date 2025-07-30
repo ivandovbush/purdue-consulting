@@ -43,7 +43,7 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="py-20 bg-card">
+    <section id="team" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-space-grotesk font-bold text-4xl md:text-5xl mb-4 text-primary">
