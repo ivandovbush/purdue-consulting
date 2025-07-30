@@ -63,13 +63,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Modern clean colors
-				'clean-bg': 'hsl(0 0% 91%)',
-				'clean-card': 'hsl(0 0% 100%)',
-				'clean-primary': 'hsl(187 53% 36%)',
-				'clean-primary-hover': 'hsl(187 53% 30%)',
-				'clean-muted': 'hsl(0 0% 48%)',
-				'clean-border': 'hsl(0 0% 85%)',
+				// Modern tech colors
+				'dark-bg': 'hsl(210 15% 8%)',
+				'dark-card': 'hsl(210 15% 12%)',
+				'tech-purple': 'hsl(260 85% 65%)',
+				'tech-pink': 'hsl(290 85% 70%)',
+				'tech-blue': 'hsl(200 85% 60%)',
+				'tech-accent': 'hsl(320 85% 65%)',
 			},
 			fontFamily: {
 				'space-grotesk': ['Space Grotesk', 'sans-serif'],

@@ -23,33 +23,32 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-xl border-b border-border">
-      <div className="container mx-auto px-8 py-6">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-primary/30">
+      <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo and Brand */}
-          <div className="flex items-center space-x-4">
-            {/* Logo - bigger and more prominent */}
+          <div className="flex items-center space-x-3">
+            {/* Logo - visible on all screens */}
             <img 
-              src="/lovable-uploads/95140297-2a53-4c25-b0ed-d513b1e0f4b3.png" 
+              src="/lovable-uploads/f28538bd-e34d-450c-8191-7745c95ca5f4.png" 
               alt="Purdue Venture Consulting Logo" 
-              className="w-12 h-12 object-contain"
+              className="w-8 h-8 object-contain"
             />
-            {/* Text - modern typography */}
-            <div className="hidden md:block font-inter font-semibold text-xl text-foreground">
+            {/* Text - hidden on mobile, visible on desktop */}
+            <div className="hidden md:block font-space-grotesk font-bold text-xl text-foreground">
               Purdue Venture Consulting
             </div>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-10">
+          <nav className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-muted-foreground hover:text-foreground transition-all duration-300 font-inter font-medium text-sm tracking-wide relative group"
+                className="text-foreground hover:text-primary transition-colors duration-300 font-inter font-medium"
               >
                 {item.name}
-                <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full glow-primary-hover"></span>
               </a>
             ))}
           </nav>
@@ -58,7 +57,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Button 
               onClick={scrollToApplication}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_hsl(187_53%_36%/0.5)] border-0"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 py-2 rounded-md transition-all duration-300"
             >
               Apply Now
             </Button>
@@ -77,13 +76,13 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-6 py-6 border-t border-border/50 animate-fade-in">
-            <div className="flex flex-col space-y-6">
+          <div className="md:hidden mt-4 py-4 border-t border-primary/30">
+            <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-muted-foreground hover:text-foreground transition-all duration-300 font-inter font-medium text-base"
+                  className="text-foreground hover:text-accent transition-colors duration-300 font-inter font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
@@ -94,7 +93,7 @@ const Header = () => {
                   scrollToApplication();
                   setIsMenuOpen(false);
                 }}
-                className="bg-primary hover:bg-[hsl(187_53%_30%)] text-primary-foreground font-medium px-8 py-3 rounded-xl transition-all duration-300 shadow-lg w-fit mt-4"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 py-2 rounded-md transition-all duration-300 w-fit"
               >
                 Apply Now
               </Button>

@@ -4,19 +4,12 @@ import { Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-card border-t border-border py-16">
+    <footer className="bg-card border-t border-border py-12">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center space-x-3 mb-4">
-              <img 
-                src="/lovable-uploads/95140297-2a53-4c25-b0ed-d513b1e0f4b3.png" 
-                alt="Purdue Venture Consulting Logo" 
-                className="w-10 h-10 object-contain"
-              />
-              <h3 className="font-inter font-semibold text-xl text-primary">Purdue Venture Consulting</h3>
-            </div>
+            <h3 className="font-space-grotesk font-bold text-2xl text-primary mb-4">Purdue Venture Consulting</h3>
             <p className="text-foreground font-inter leading-relaxed mb-4">
               Purdue Venture Consulting - Where Innovation Meets Opportunity. 
               Connecting exceptional students with the world's leading venture capital firms and startups.
@@ -30,7 +23,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-inter font-semibold text-primary mb-4">Quick Links</h4>
+            <h4 className="font-space-grotesk font-semibold text-primary mb-4">Quick Links</h4>
             <div className="space-y-2">
               <a href="#about" className="block text-foreground hover:text-primary transition-colors duration-300 font-inter">About</a>
               <a href="#services" className="block text-foreground hover:text-primary transition-colors duration-300 font-inter">What We Do</a>
@@ -42,7 +35,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-inter font-semibold text-primary mb-4">Contact</h4>
+            <h4 className="font-space-grotesk font-semibold text-primary mb-4">Contact</h4>
             <div className="space-y-2 text-foreground font-inter">
               <p>Purdue University</p>
               <p>West Lafayette, IN 47907</p>
