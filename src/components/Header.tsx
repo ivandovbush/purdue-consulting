@@ -23,19 +23,19 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-primary/30">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-sm">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo and Brand */}
           <div className="flex items-center space-x-3">
             {/* Logo - visible on all screens */}
             <img 
-              src="/lovable-uploads/f28538bd-e34d-450c-8191-7745c95ca5f4.png" 
+              src="/lovable-uploads/95140297-2a53-4c25-b0ed-d513b1e0f4b3.png" 
               alt="Purdue Venture Consulting Logo" 
               className="w-8 h-8 object-contain"
             />
             {/* Text - hidden on mobile, visible on desktop */}
-            <div className="hidden md:block font-space-grotesk font-bold text-xl text-foreground">
+            <div className="hidden md:block font-inter font-semibold text-xl text-foreground">
               Purdue Venture Consulting
             </div>
           </div>
@@ -57,7 +57,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Button 
               onClick={scrollToApplication}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 py-2 rounded-md transition-all duration-300"
+              className="bg-primary hover:bg-[hsl(187_53%_30%)] text-primary-foreground font-medium px-6 py-2 rounded-lg transition-all duration-300 shadow-sm"
             >
               Apply Now
             </Button>
