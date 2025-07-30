@@ -13,7 +13,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/95140297-2a53-4c25-b0ed-d513b1e0f4b3.png" 
                 alt="Purdue Venture Consulting Logo" 
-                className="w-8 h-8 object-contain"
+                className="w-10 h-10 object-contain"
               />
               <h3 className="font-inter font-semibold text-xl text-primary">Purdue Venture Consulting</h3>
             </div>
