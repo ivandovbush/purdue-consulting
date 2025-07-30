@@ -23,7 +23,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-xl border-b border-border/50 shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-xl border-b border-border">
       <div className="container mx-auto px-8 py-6">
         <div className="flex items-center justify-between">
           {/* Logo and Brand */}
@@ -49,7 +49,7 @@ const Header = () => {
                 className="text-muted-foreground hover:text-foreground transition-all duration-300 font-inter font-medium text-sm tracking-wide relative group"
               >
                 {item.name}
-                <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full glow-primary-hover"></span>
               </a>
             ))}
           </nav>
@@ -58,7 +58,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Button 
               onClick={scrollToApplication}
-              className="bg-primary hover:bg-[hsl(187_53%_30%)] text-primary-foreground font-medium px-8 py-3 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 border-0"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_hsl(187_53%_36%/0.5)] border-0"
             >
               Apply Now
             </Button>

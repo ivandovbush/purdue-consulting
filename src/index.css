@@ -7,86 +7,86 @@
 
 @layer base {
   :root {
-    --background: 0 0% 91%;
-    --foreground: 0 0% 0%;
+    --background: 0 0% 4%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 0%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 0%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
 
     --primary: 187 53% 36%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 0%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 0 0% 85%;
-    --muted-foreground: 0 0% 48%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 187 53% 36%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 0 0% 91%;
+    --accent-foreground: 0 0% 4%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 85%;
-    --input: 0 0% 100%;
+    --border: 0 0% 15%;
+    --input: 0 0% 12%;
     --ring: 187 53% 36%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 91%;
-    --sidebar-foreground: 0 0% 0%;
+    --sidebar-background: 0 0% 4%;
+    --sidebar-foreground: 0 0% 98%;
     --sidebar-primary: 187 53% 36%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 96%;
-    --sidebar-accent-foreground: 0 0% 0%;
-    --sidebar-border: 0 0% 85%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 15%;
     --sidebar-ring: 187 53% 36%;
 
-    /* Clean gradient colors */
-    --gradient-primary: linear-gradient(135deg, hsl(187 53% 36%), hsl(187 53% 30%));
-    --gradient-secondary: linear-gradient(135deg, hsl(0 0% 100%), hsl(0 0% 96%));
-    --gradient-accent: linear-gradient(135deg, hsl(187 53% 36%), hsl(187 53% 42%));
+    /* Futuristic gradient colors */
+    --gradient-primary: linear-gradient(135deg, hsl(187 53% 36%), hsl(187 53% 42%));
+    --gradient-glow: linear-gradient(135deg, hsl(187 53% 36% / 0.2), hsl(187 53% 42% / 0.1));
+    --gradient-accent: linear-gradient(135deg, hsl(0 0% 8%), hsl(0 0% 12%));
   }
 
   .dark {
-    --background: 0 0% 91%;
-    --foreground: 0 0% 0%;
+    --background: 0 0% 4%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 0%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 0%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
 
     --primary: 187 53% 36%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 0%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 0 0% 85%;
-    --muted-foreground: 0 0% 48%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 187 53% 36%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 0 0% 91%;
+    --accent-foreground: 0 0% 4%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 85%;
-    --input: 0 0% 100%;
+    --border: 0 0% 15%;
+    --input: 0 0% 12%;
     --ring: 187 53% 36%;
-    --sidebar-background: 0 0% 91%;
-    --sidebar-foreground: 0 0% 0%;
+    --sidebar-background: 0 0% 4%;
+    --sidebar-foreground: 0 0% 98%;
     --sidebar-primary: 187 53% 36%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 96%;
-    --sidebar-accent-foreground: 0 0% 0%;
-    --sidebar-border: 0 0% 85%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 15%;
     --sidebar-ring: 187 53% 36%;
   }
 }
@@ -163,22 +163,31 @@ html {
   animation-delay: 4s;
 }
 
-/* Modern gradient cards */
+/* Futuristic gradient cards */
 .gradient-card {
   background: var(--gradient-primary);
 }
 
-.gradient-secondary-card {
-  background: var(--gradient-secondary);
+.gradient-glow-card {
+  background: var(--gradient-glow);
 }
 
 .gradient-accent-card {
   background: var(--gradient-accent);
 }
 
-/* Modern grid background pattern */
+/* Futuristic grid background pattern */
 .bg-grid-pattern {
-  background-image: linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(40,135,149,0.1) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(40,135,149,0.1) 1px, transparent 1px);
   background-size: 50px 50px;
+}
+
+/* Futuristic glow effects */
+.glow-primary {
+  box-shadow: 0 0 20px hsl(187 53% 36% / 0.3);
+}
+
+.glow-primary-hover:hover {
+  box-shadow: 0 0 30px hsl(187 53% 36% / 0.5);
 }
