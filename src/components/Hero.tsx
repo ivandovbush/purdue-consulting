@@ -18,14 +18,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
-      {/* Geometric Background */}
-      <div className="geometric-bg">
-        <div className="geometric-shape w-32 h-32 border-2 border-primary/20 rotate-45"></div>
-        <div className="geometric-shape w-24 h-24 bg-primary/10 rounded-full"></div>
-        <div className="geometric-shape w-20 h-20 border border-accent/10 transform rotate-12"></div>
-      </div>
-
+    <section className="relative min-h-screen flex items-center justify-center bg-background">
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <div className="animate-fade-in">
