@@ -12,7 +12,6 @@ import PurdueAlumni from '@/components/PurdueAlumni';
 import Partners from '@/components/Partners';
 import Application from '@/components/Application';
 import Footer from '@/components/Footer';
-import BackgroundRemovalProcessor from '@/components/BackgroundRemovalProcessor';
 
 const Index = () => {
   return (
@@ -42,7 +41,6 @@ const Index = () => {
           <Application />
         </main>
         <Footer />
-        <BackgroundRemovalProcessor />
       </div>
     </div>
   );
