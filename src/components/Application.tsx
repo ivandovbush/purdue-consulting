@@ -78,7 +78,7 @@ const Application = () => {
 
             {/* Application Portal */}
             <div className="bg-secondary rounded-lg p-8 flex flex-col justify-center items-center text-center space-y-6 border border-primary/20">
-              <div className="w-24 h-16 flex items-center justify-center mb-4">
+              <div className="w-32 h-20 flex items-center justify-center mb-4">
                 <img 
                   src="/lovable-uploads/2912c4e7-9d2d-47db-95cc-d511a5ca659d.png" 
                   alt="Purdue Venture Consulting Logo" 
