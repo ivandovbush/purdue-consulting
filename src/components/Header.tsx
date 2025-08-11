@@ -30,7 +30,7 @@ const Header = () => {
           <div className="flex items-center space-x-3">
             {/* Logo - visible on all screens */}
             <img 
-              src="/lovable-uploads/2b45257c-2d22-4300-9b36-e13026ec0eb7.png" 
+              src="/lovable-uploads/e20e02ac-61f7-4e8b-9da0-f6a4d8cf94d4.png" 
               alt="Purdue Venture Consulting Logo" 
               className="w-8 h-8 object-contain"
             />
