@@ -32,7 +32,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/e20e02ac-61f7-4e8b-9da0-f6a4d8cf94d4.png" 
               alt="Purdue Venture Consulting Logo" 
-              className="w-8 h-8 object-contain"
+              className="w-14 h-14 object-contain drop-shadow-lg"
             />
             {/* Text - hidden on mobile, visible on desktop */}
             <div className="hidden md:block font-space-grotesk font-bold text-xl text-foreground">
