@@ -78,8 +78,8 @@ const Admissions = () => {
             <div className="bg-secondary p-8 rounded-lg shadow-lg border border-primary/20">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                  <div className="text-3xl font-space-grotesk font-bold text-accent mb-2">82%</div>
-                  <div className="text-muted-foreground text-sm font-inter">Job Placement Rate</div>
+                  <div className="text-3xl font-space-grotesk font-bold text-accent mb-2">10+</div>
+                  <div className="text-muted-foreground text-sm font-inter">Partner Organizations</div>
                 </div>
                 <div>
                   <div className="text-3xl font-space-grotesk font-bold text-accent mb-2">3.0+</div>
