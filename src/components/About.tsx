@@ -36,8 +36,8 @@ const About = () => {
                 <div className="text-accent text-sm">Partner Companies</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-space-grotesk font-bold text-accent">95%</div>
-                <div className="text-accent text-sm">Job Placement Rate</div>
+                <div className="text-3xl font-space-grotesk font-bold text-accent">10+</div>
+                <div className="text-accent text-sm">Partner Organizations</div>
               </div>
             </div>
           </div>

@@ -5,7 +5,7 @@ import { Linkedin } from 'lucide-react';
 const Team = () => {
   const teamMembers = [
     {
-      name: "Pedro Garcia Faras",
+      name: "Pedro Garcia Farias",
       position: "Co-Founder",
       major: "Industrial Engineering",
       year: "Junior",
