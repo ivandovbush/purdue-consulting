@@ -11,9 +11,15 @@ const Admissions = () => {
     },
     {
       step: "02",
+      title: "Interview",
+      description: "Interview with the team to discuss your background, interests, and fit for our community.",
+      timeline: "About 1 Week After Application"
+    },
+    {
+      step: "03",
       title: "Final Selection",
       description: "Join our community after a final evaluation of your potential for leadership and commitment to growth.",
-      timeline: "1 Week After Application Submission"
+      timeline: "2 Weeks After Application Submission"
     }
   ];
 
@@ -76,11 +82,11 @@ const Admissions = () => {
                   <div className="text-muted-foreground text-sm font-inter">Job Placement Rate</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-space-grotesk font-bold text-accent mb-2">3.2+</div>
+                  <div className="text-3xl font-space-grotesk font-bold text-accent mb-2">3.0+</div>
                   <div className="text-muted-foreground text-sm font-inter">Average GPA</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-space-grotesk font-bold text-accent mb-2">1 week</div>
+                  <div className="text-3xl font-space-grotesk font-bold text-accent mb-2">2 weeks</div>
                   <div className="text-muted-foreground text-sm font-inter">Application Review Time</div>
                 </div>
               </div>
