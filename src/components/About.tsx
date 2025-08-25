@@ -16,9 +16,8 @@ const About = () => {
             </div>
             
             <p className="text-foreground text-lg leading-relaxed font-inter">
-              Purdue Venture Consulting stands as the university's premier innovation-driven 
-              business organization, dedicated to developing the next generation of strategic 
-              thinkers and venture builders.
+              Purdue Venture Consulting is a student organization that helps motivated students 
+              develop strategic thinking skills and connect with the startup ecosystem.
             </p>
             
             <p className="text-foreground text-lg leading-relaxed font-inter">

@@ -12,7 +12,7 @@ const Admissions = () => {
     {
       step: "02",
       title: "Final Selection",
-      description: "Join our elite cohort after a final evaluation of your potential for leadership and commitment to excellence.",
+      description: "Join our community after a final evaluation of your potential for leadership and commitment to growth.",
       timeline: "1 Week After Application Submission"
     }
   ];

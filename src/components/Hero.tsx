@@ -28,8 +28,8 @@ const Hero = () => {
           </h1>
           
           <p className="text-muted-foreground text-lg md:text-xl mb-8 max-w-2xl mx-auto font-inter">
-            Purdue University's premier venture consulting club connecting elite students with 
-            startups, venture capital firms, and innovation leaders across the nation.
+            A club that helps motivated students connect with rising startups, 
+            venture capital firms, and innovation leaders across the nation.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -37,7 +37,7 @@ const Hero = () => {
               onClick={scrollToApplication}
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 sm:px-8 py-3 rounded-md transition-all duration-300 text-base sm:text-lg w-full sm:w-auto"
             >
-              Join Our Elite Network
+              Join Our Community
             </Button>
             <Button onClick={scrollToServices} variant="outline" size="sm" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground font-semibold rounded-md transition-all duration-300 w-full sm:w-auto">
               Learn More
