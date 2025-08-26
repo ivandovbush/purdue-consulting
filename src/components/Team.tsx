@@ -11,7 +11,7 @@ const Team = () => {
       year: "Junior",
       bio: "Former manufacturing engineering intern at Stellantis with expertise in business management, sales, and marketing.",
       linkedin: "https://www.linkedin.com/in/pgarciaf/",
-      image: "/lovable-uploads/507f86fa-3d7a-4fce-9d85-9ca49108655b.png"
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face"
     },
     {
       name: "Mehdi El Mansar",
@@ -20,7 +20,7 @@ const Team = () => {
       year: "Junior", 
       bio: "Aerospace engineering student with award-winning design experience and passion for mission-driven, sustainable innovation.",
       linkedin: "https://www.linkedin.com/in/mehdi-el-mansar/",
-      image: "/lovable-uploads/504d70be-bef1-4524-bcd3-328680f0bc66.png"
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
     },
     {
       name: "Nikhai Tonwar",
@@ -29,7 +29,7 @@ const Team = () => {
       year: "Junior",
       bio: "Former Energy Engineering Intern at Trane Technologies with experience in data analysis, marketing, and business logistics.",
       linkedin: "https://www.linkedin.com/in/nikhai-tonwar-a897a3294/",
-      image: "/lovable-uploads/6b8e7100-ba33-4421-9726-8cdd8be82ee2.png"
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face"
     },
     {
       name: "Hassan Berbich",
@@ -38,7 +38,7 @@ const Team = () => {
       year: "Junior",
       bio: "Industrial engineering intern at Aramco with experience in research, teaching, and global supply chain innovation.",
       linkedin: "https://www.linkedin.com/in/hassan-berbich/",
-      image: "/lovable-uploads/f0c899db-a668-412c-80f6-b18377d4e717.png"
+      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=face"
     }
   ];
 
