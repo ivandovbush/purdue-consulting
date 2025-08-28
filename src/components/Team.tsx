@@ -1,9 +1,11 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Linkedin } from 'lucide-react';
-import professionalPlaceholder from '@/assets/professional-placeholder.png';
+import { Skeleton } from '@/components/ui/skeleton';
 
 const Team = () => {
+  const [imageLoaded, setImageLoaded] = useState<{[key: number]: boolean}>({});
+
   const teamMembers = [
     {
       name: "Pedro Garcia Farias",
@@ -12,7 +14,7 @@ const Team = () => {
       year: "Junior",
       bio: "Former manufacturing engineering intern at Stellantis with expertise in business management, sales, and marketing.",
       linkedin: "https://www.linkedin.com/in/pgarciaf/",
-      image: professionalPlaceholder
+      image: "/lovable-uploads/pedro_walc2.JPG"
     },
     {
       name: "Mehdi El Mansar",
@@ -21,7 +23,7 @@ const Team = () => {
       year: "Junior", 
       bio: "Aerospace engineering student with award-winning design experience and passion for mission-driven, sustainable innovation.",
       linkedin: "https://www.linkedin.com/in/mehdi-el-mansar/",
-      image: professionalPlaceholder
+      image: "/lovable-uploads/mehdi_walc1.JPG"
     },
     {
       name: "Nikhai Tonwar",
@@ -30,7 +32,7 @@ const Team = () => {
       year: "Junior",
       bio: "Former Energy Engineering Intern at Trane Technologies with experience in data analysis, marketing, and business logistics.",
       linkedin: "https://www.linkedin.com/in/nikhai-tonwar-a897a3294/",
-      image: professionalPlaceholder
+      image: "/lovable-uploads/nikhai_walc2.JPG"
     },
     {
       name: "Hassan Berbich",
@@ -39,9 +41,13 @@ const Team = () => {
       year: "Junior",
       bio: "Industrial engineering intern at Aramco with experience in research, teaching, and global supply chain innovation.",
       linkedin: "https://www.linkedin.com/in/hassan-berbich/",
-      image: professionalPlaceholder
+      image: "/lovable-uploads/hassan_walc1.JPG"
     }
   ];
+
+  const handleImageLoad = (index: number) => {
+    setImageLoaded(prev => ({ ...prev, [index]: true }));
+  };
 
   return (
     <section id="team" className="py-20 bg-background">
@@ -73,11 +79,19 @@ const Team = () => {
                 </div>
                 
                 <div className="w-48 h-48 mx-auto mb-6 relative">
+                  {!imageLoaded[index] && (
+                    <Skeleton className="w-full h-full rounded-2xl absolute inset-0" />
+                  )}
                   <img 
                     src={member.image} 
-                    alt={member.name}
-                    className="w-full h-full object-cover rounded-2xl border-2 border-primary/30 shadow-md"
+                    alt={`${member.name} - ${member.position} at Purdue Venture Consulting`}
+                    className={`w-full h-full object-cover rounded-2xl border-2 border-primary/30 shadow-md transition-opacity duration-300 ${
+                      imageLoaded[index] ? 'opacity-100' : 'opacity-0'
+                    }`}
                     style={{ objectPosition: 'center 20%' }}
+                    loading="lazy"
+                    decoding="async"
+                    onLoad={() => handleImageLoad(index)}
                   />
                 </div>
 
@@ -97,9 +111,11 @@ const Team = () => {
                   <div className="w-24 h-24 mx-auto mb-4">
                     <img 
                       src={member.image} 
-                      alt={member.name}
+                      alt={`${member.name} - ${member.position} at Purdue Venture Consulting`}
                       className="w-full h-full object-cover rounded-full border-2 border-accent"
                       style={{ objectPosition: 'center 20%' }}
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   
